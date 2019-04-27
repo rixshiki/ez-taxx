@@ -1,9 +1,9 @@
-<template>
-<v-container align-start justify-center row fill-height class="bg1" fluid>
-<v-layout justify-start column fill-height class="green" >
+<template >
+<v-container align-start justify-center row fill-height  fluid class="bg1">
+<v-layout justify-start column fill-height >
 <div>
   <div>
-      <v-layout class="blue">
+      <v-layout >
       <ul class="pageBar">
             <router-link to="/"><li class="goLeft pbLiH"><a class="navTextG" href="">การคำนวณภาษี</a></li></router-link>
             <router-link to="/advDiscountTax"><li class="goLeft pbLiH navTextG black--text">วิธีลดหย่อนภาษีเพิ่มเติม</li></router-link>
