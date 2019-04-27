@@ -1,6 +1,6 @@
 <template>
 
-<v-container>
+<v-container fluid class="bg1">
     <ul class="pageBar">
             <router-link to="/"><li class="goLeft pbLiH navTextG black--text">การคำนวณภาษี</li></router-link>
             <router-link to="/advDiscountTax"><li class="goLeft pbLiH"><a class="navTextG" href="">วิธีลดหย่อนภาษีเพิ่มเติม</a></li></router-link>
@@ -80,7 +80,7 @@
             }
             .navTextG {
                 display: block;
-                color: #989898;
+                color: #330505;
                 text-align: center;
                 padding: 14px 40px;
                 text-decoration: none;
@@ -88,7 +88,10 @@
             .pbLiH a:hover {
                 color: #11144C;
             }
-
+            .bg1 {
+                background-image: url("background.jpg");
+                
+            }
             @font-face {
             font-family: spmk;
             src: url('supermarket.ttf') format('truetype');

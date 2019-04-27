@@ -10,7 +10,7 @@
           <span class="headline">เข้าสู่ระบบ</span>
         </center>
         <v-card-text>
-          <v-container grid-list-md>
+          <v-container grid-list-md >
             <v-layout wrap>
               <v-flex xs12>
                 <v-text-field

@@ -1,11 +1,30 @@
 <template>
-<v-container>
-  <ul class="pageBar">
+<v-container fluid align-start justify-center row fill-height class="bg1">
+<v-layout justify-start column fill-height class="green">
+  <div>
+  <div>
+      <v-layout  class="blue">
+      <ul class="pageBar">
             <router-link to="/"><li class="goLeft pbLiH"><a class="navTextG" href="">การคำนวณภาษี</a></li></router-link>
-            <router-link to="/advDiscountTax"><li class="goLeft pbLiH"><a class="navTextG" href="">วิธีลดหย่อนภาษีเพิ่มเติม</a></li></router-link>
-            <router-link to="/contact"><li class="goLeft pbLiH navTextG black--text">ติดต่อเรา</li></router-link>
-        </ul>
-        <h1>contact</h1>
+            <router-link to="/advDiscountTax"><li class="goLeft pbLiH navTextG">วิธีลดหย่อนภาษีเพิ่มเติม</li></router-link>
+            <router-link to="/contact"><li class="goLeft pbLiH "><a class="navTextG black--text" href="">ติดต่อเรา</a></li></router-link>
+      </ul>
+      </v-layout>
+  </div>
+  <div>
+    <v-layout  class="red" >
+      <h1>Contact</h1>
+    </v-layout>
+  </div>
+  <div>
+    <v-layout  class="pink">
+      <h1>HEllo</h1>
+    </v-layout>
+</div>
+
+</div>
+
+</v-layout>
 </v-container>
 </template>
 
@@ -16,5 +35,8 @@
 </script>
 
 <style>
-
+  .bg1 {
+                background-image: url("background.jpg");
+                
+            }
 </style>

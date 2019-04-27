@@ -1,16 +1,10 @@
 <template class="red">
     <v-app>
     
-    
-    
         <div class="container ">
-    
-    
-    
+   
             <!--<space class="space"></space>-->
-    
-    
-    
+   
             <header class="header">
      
                 <h1>EZ - TAX</h1>
@@ -97,6 +91,7 @@
                             </v-card>
                             <v-btn color="primary" @click="e1 = 3">
                                 Continue
+                                
                             </v-btn>
                             <v-btn flat>Cancel</v-btn>
                         </v-stepper-content>
@@ -114,6 +109,7 @@
                                     <v-radio label="ถึง" value="Radio-3"></v-radio>
                                     <v-radio label="ไม่ถึง" value="radio-4"></v-radio>
                                 </v-radio-group>
+
                                 </v-container>
     
                             </v-card>
@@ -132,21 +128,15 @@
     
     
             </section>
-    
-    
-    
+
             <footer class="footer">
     
                 Footer
     
             </footer>
-    
-    
-    
+   
         </div>
-    
-    
-    
+   
     </v-app>
 </template>
 
@@ -156,17 +146,25 @@ export default {
         return {
             e1: 0,
             radios: 'radio-1'
+            
         }
-    }
+    },
+    
+    
 }
+
 </script>
 
 <style>
 .container {
     display: grid;
     /* มันคือ <grid-template-rows> / <grid-template-columns> */
-    grid-template: "header header header header" 1fr/* เฮดเดอ กินเพื่อนที่ 2 แล้วบน*/
-    "main main main main" 3fr "main main main main" 3fr "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr;
+    grid-template: 
+    "header header header header" 1fr/* เฮดเดอ กินเพื่อนที่ 2 แล้วบน*/
+    "main main main main" 3fr 
+    "main main main main" 3fr 
+    "footer footer footer footer" 1fr 
+    / 1fr 1fr 1fr 1fr;
     color: black;
     font-weight: bold;
     /*text-align: center;*/
@@ -211,13 +209,5 @@ export default {
     grid-area: my1;
 }
 
-.space {
-    background: #fff;
-    grid-area: space;
-}
-
-.space2 {
-    background: #fff;
-    grid-area: space2;
-}
 </style>
+
