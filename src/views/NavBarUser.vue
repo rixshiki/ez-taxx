@@ -5,7 +5,7 @@
       
       <v-toolbar app class="indigo darken-4 white--text">
       <v-toolbar-title class="headline text-uppercase">
-        <router-link to="/"><a class="navTextG" href="">EZ - TAX</a></router-link>
+        <router-link to="/"><a  class="navTextG" href="">EZ - TAX</a></router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <left>

@@ -24,6 +24,26 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ '@/views/calculate.vue')
     },
     {
+      path: '/calculate2',
+      name: 'calculate2',
+      component: () => import(/* webpackChunkName: "about" */ '@/views/calculate2.vue')
+    },
+    {
+      path: '/calculate3',
+      name: 'calculate3',
+      component: () => import(/* webpackChunkName: "about" */ '@/views/calculate3.vue')
+    },
+    {
+      path: '/calculate4',
+      name: 'calculate4',
+      component: () => import(/* webpackChunkName: "about" */ '@/views/calculate4.vue')
+    },
+    {
+      path: '/calculate5',
+      name: 'calculate5',
+      component: () => import(/* webpackChunkName: "about" */ '@/views/calculate5.vue')
+    },
+    {
       path: '/advDiscountTax',
       name: 'advDiscountTax',
       component: () => import(/* webpackChunkName: "about" */ '@/views/advDiscountTax.vue')

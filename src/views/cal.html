@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>เครื่องมือคำนวณภาษี - UOB Asset Management</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="icon" href="https://www.uobam.co.th/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://www.uobam.co.th/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="https://www.uobam.co.th/Content/css_th?v=71Nbt0QRHsEBBitPx2JivNow13i-lT5QDLKnkgsPnQY1"
+        rel="stylesheet" />
+
+
+    <link href="https://www.uobam.co.th/Content/taxcal?v=MZ26AmoqbrKb9xoddCFNagQykxANVvuHTwKf9oDFjLM1"
+        rel="stylesheet" />
+
+
+    <script
+        type="text/javascript">var BASE_URL = "https://www.uobam.co.th/"; var BASE_LANG = "https://www.uobam.co.th/th/"; var LANG = "th"; var CORE_NO_DATA = "ไม่พบข้อมูล";</script>
+
+    <base href="www.uobam.co.th/">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#0E2570">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#0E2570">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+
+</head>
+
+<body class="th">
+
+    <header>
+        <div class="content-wrapper">
+            <div id="icon-nav" class="visible-xs">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-home-logo float-left">
+                <p class="site-title">
+                    <a href="/th/home" class="icon-core link-home">
+                    </a>
+                </p>
+            </div>
+            <div class="menu-home-list float-right">
+                <ul id="menu-header" class="desktop">
+                    <li class='menu-header-list menu-home '>
+                        <a href="/th/home" class="menu-header-list-link" data-text="หน้าหลัก">
+                            <span class="link-text">หน้าหลัก</span>
+                        </a>
+                    </li>
+                    <li id="menu-why-us" class='menu-header-list has-sub-menu '>
+                        <a href="javascript:void(0)" class="menu-header-list-link no-link" data-text="รู้จัก UOBAM">
+                            <span class="link-text">รู้จัก UOBAM</span>
+                        </a>
+                        <ul id="menu-why-child-level1" class="menu-header-child-level1-panel" data-height="242">
+                            <li class="hide-mobile arrow-head-menu m1">
+                                <div></div>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/about-us/company-profile" class="menu-header-list-level1-link "
+                                    data-text="ข้อมูลบริษัท">
+                                    <span class="link-level1-text">ข้อมูลบริษัท</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/about-us/vision-mission" class="menu-header-list-level1-link"
+                                    data-text="วิสัยทัศน์ / พันธกิจ">
+                                    <span class="link-level1-text">วิสัยทัศน์ / พันธกิจ</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/about-us/board-of-director" class="menu-header-list-level1-link"
+                                    data-text="คณะกรรมการบริษัท">
+                                    <span class="link-level1-text">คณะกรรมการบริษัท</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/about-us/management-team" class="menu-header-list-level1-link"
+                                    data-text="ทีมผู้บริหาร">
+                                    <span class="link-level1-text">ทีมผู้บริหาร</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/about-us/awards" class="menu-header-list-level1-link"
+                                    data-text="รางวัลและความสำเร็จ">
+                                    <span class="link-level1-text">รางวัลและความสำเร็จ</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/about-us/policy" class="menu-header-list-level1-link" data-text="นโยบาย">
+                                    <span class="link-level1-text">นโยบาย</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-mutual-fund" class='menu-header-list has-sub-menu  '>
+                        <a href="javascript:void(0)" class="menu-header-list-link no-link" data-text="กองทุนรวม">
+                            <span class="link-text">กองทุนรวม</span>
+                        </a>
+                        <ul id="menu-mutual-fund-child-level1" class="menu-header-child-level1-panel" data-height="200">
+                            <li class="hide-mobile arrow-head-menu m2">
+                                <div></div>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/mutual-fund" class="menu-header-list-level1-link"
+                                    data-text="กองทุนรวมคืออะไร">
+                                    <span class="link-level1-text">กองทุนรวมคืออะไร</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list has-child-level2">
+                                <a href="/th/fund-type" class="menu-header-list-level1-link"
+                                    data-text="ข้อมูลกองทุนรวม">
+                                    <span class="link-level1-text">ข้อมูลกองทุนรวม</span>
+                                </a>
+                                <ul id="menu-mutual-fund-child-level2" class="menu-header-child-level2-panel right"
+                                    data-height="320">
+                                    <li class="menu-header-child-level2-list">
+                                        <a href="/th/fund-type/8/money-market" class="menu-header-list-level2-link"
+                                            data-text="กองทุนรวมตลาดเงิน">
+                                            <span class="link-level2-text">กองทุนรวมตลาดเงิน</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu-header-child-level2-list">
+                                        <a href="/th/fund-type/1/fixed-income" class="menu-header-list-level2-link"
+                                            data-text="กองทุนรวมตราสารหนี้">
+                                            <span class="link-level2-text">กองทุนรวมตราสารหนี้</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu-header-child-level2-list">
+                                        <a href="/th/fund-type/4/mixed" class="menu-header-list-level2-link"
+                                            data-text="กองทุนรวมผสม">
+                                            <span class="link-level2-text">กองทุนรวมผสม</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu-header-child-level2-list">
+                                        <a href="/th/fund-type/2/equity" class="menu-header-list-level2-link"
+                                            data-text="กองทุนรวมหุ้น">
+                                            <span class="link-level2-text">กองทุนรวมหุ้น</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-header-child-level2-list">
+                                        <a href="/th/fund-type/5/long-term-equity" class="menu-header-list-level2-link"
+                                            data-text="กองทุนรวมหุ้นระยะยาว">
+                                            <span class="link-level2-text">กองทุนรวมหุ้นระยะยาว</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-header-child-level2-list">
+                                        <a href="/th/fund-type/6/retirement" class="menu-header-list-level2-link"
+                                            data-text="กองทุนรวมเพื่อการเลี้ยงชีพ">
+                                            <span class="link-level2-text">กองทุนรวมเพื่อการเลี้ยงชีพ</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-header-child-level2-list">
+                                        <a href="/th/fund-type/3/foreign-investment"
+                                            class="menu-header-list-level2-link" data-text="กองทุนรวมต่างประเทศ">
+                                            <span class="link-level2-text">กองทุนรวมต่างประเทศ</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-header-child-level2-list">
+                                        <a href="/th/fund-type/7/property" class="menu-header-list-level2-link"
+                                            data-text="กองทุนรวมอสังหาฯ">
+                                            <span class="link-level2-text">กองทุนรวมอสังหาริมทรัพย์</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-header-child-level1-list has-child-level2">
+                                <a class="menu-header-list-level1-link" data-text="มูลค่าหน่วยลงทุน">
+                                    <span class="link-level1-text">มูลค่าหน่วยลงทุน</span>
+                                </a>
+                                <ul id="menu-nav-child-level2" class="menu-header-child-level2-panel right"
+                                    data-height="80">
+                                    <li class="menu-header-child-level2-list">
+                                        <a href="/th/price/list" class="menu-header-list-level2-link"
+                                            data-text="มูลค่าหน่วยลงทุน">
+                                            <span class="link-level2-text">มูลค่าหน่วยลงทุน</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-header-child-level2-list">
+                                        <a href="/th/price/previous" class="menu-header-list-level2-link"
+                                            data-text="มูลค่าหน่วยลงทุนย้อนหลัง">
+                                            <span class="link-level2-text">มูลค่าหน่วยลงทุนย้อนหลัง</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/mutual-fund/performance" class="menu-header-list-level1-link"
+                                    data-text="ผลการดำเนินงาน">
+                                    <span class="link-level1-text">ผลการดำเนินงาน</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list has-child-level2">
+                                <a href="javascript:void(0)" class="menu-header-list-level1-link"
+                                    data-text="สิทธิประโยชน์ทางภาษี">
+                                    <span class="link-level1-text">สิทธิประโยชน์ทางภาษี</span>
+                                </a>
+                                <ul id="menu-tax-child-level2" class="menu-header-child-level2-panel right"
+                                    data-height="80">
+                                    <li class="menu-header-child-level2-list">
+                                        <a href="/th/tax-benefit/ltf" class="menu-header-list-level2-link"
+                                            data-text="กองทุนรวมหุ้นระยะยาว">
+                                            <span class="link-level2-text">กองทุนรวมหุ้นระยะยาว</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-header-child-level2-list">
+                                        <a href="/th/tax-benefit/rmf" class="menu-header-list-level2-link"
+                                            data-text="กองทุนรวมเพื่อการเลี้ยงชีพ">
+                                            <span class="link-level2-text">กองทุนรวมเพื่อการเลี้ยงชีพ</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-provident-fund" class='menu-header-list has-sub-menu '>
+                        <a href="/th/provident-fund" class="menu-header-list-link" data-text="กองทุนสำรองเลี้ยงชีพ">
+                            <span class="link-text">กองทุนสำรองเลี้ยงชีพ</span>
+                        </a>
+                        <ul id="menu-why-child-level1" class="menu-header-child-level1-panel" data-height="320">
+                            <li class="hide-mobile arrow-head-menu m1">
+                                <div></div>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/provident-fund/1" class="menu-header-list-level1-link "
+                                    data-text="ความรู้เบื้องต้น">
+                                    <span class="link-level1-text">ความรู้เบื้องต้น</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/provident-fund/3" class="menu-header-list-level1-link"
+                                    data-text="การให้บริการ">
+                                    <span class="link-level1-text">การให้บริการ</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/provident-fund/2" class="menu-header-list-level1-link"
+                                    data-text="ข้อมูลผลิตภัณฑ์">
+                                    <span class="link-level1-text">ข้อมูลผลิตภัณฑ์</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/provident-fund/4" class="menu-header-list-level1-link"
+                                    data-text="จุดเด่น บลจ. ยูโอบี">
+                                    <span class="link-level1-text">จุดเด่น บลจ. ยูโอบี</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/provident-fund/6" class="menu-header-list-level1-link"
+                                    data-text="แบบประเมินความเสี่ยง">
+                                    <span class="link-level1-text">แบบประเมินความเสี่ยง</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/provident-fund/5" class="menu-header-list-level1-link"
+                                    data-text="ดาวน์โหลดแบบฟอร์ม">
+                                    <span class="link-level1-text">ดาวน์โหลดแบบฟอร์ม</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="http://www.set.or.th/education/th/online_classroom/tool.html" target="_blank"
+                                    class="menu-header-list-level1-link" data-text="โปรแกรมคำนวณ">
+                                    <span class="link-level1-text">โปรแกรมคำนวณ</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/provident-fund/8" class="menu-header-list-level1-link" data-text="ติดต่อ">
+                                    <span class="link-level1-text">ติดต่อ</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-private-fund" class='menu-header-list '>
+                        <a href="/th/private-fund" class="menu-header-list-link" data-text="กองทุนส่วนบุคคล">
+                            <span class="link-text">กองทุนส่วนบุคคล</span>
+                        </a>
+                    </li>
+                    <li id="menu-channel" class='menu-header-list has-sub-menu '>
+                        <a href="javascript:void(0);" class="menu-header-list-link no-link" data-text="ช่องทางบริการ">
+                            <span class="link-text">ช่องทางบริการ</span>
+                        </a>
+                        <ul id="menu-channel-fund-child-level1" class="menu-header-child-level1-panel show-left-menu"
+                            data-height="200">
+                            <li class="hide-mobile arrow-head-menu m3">
+                                <div></div>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/Channel/OpenAccount" class="menu-header-list-level1-link"
+                                    data-text="เปิดบัญชีกองทุนรวม">
+                                    <span class="link-level1-text">เปิดบัญชีกองทุนรวม</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/Channel/OnlineService" class="menu-header-list-level1-link"
+                                    data-text="บริการออนไลน์">
+                                    <span class="link-level1-text">บริการออนไลน์</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/Channel/MutualFundByPhone" class="menu-header-list-level1-link"
+                                    data-text="บริการออนไลน์">
+                                    <span class="link-level1-text">บริการ Mutual Fund by Phone</span>
+                                </a>
+                            </li>
+
+
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/Channel/SellingAgent" class="menu-header-list-level1-link"
+                                    data-text="ผู้สนับสนุนการขายหรือรับซื้อคืนหน่วยลงทุน">
+                                    <span class="link-level1-text">ผู้สนับสนุนการขายหรือรับซื้อคืนหน่วยลงทุน</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/Channel/PortfolioRecommend" class="menu-header-list-level1-link"
+                                    data-text="จัดพอร์ตการลงทุน">
+                                    <span class="link-level1-text">จัดพอร์ตการลงทุน</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-service" class='menu-header-list has-sub-menu menu-select'>
+                        <a href="javascript:void(0);" class="menu-header-list-link no-link"
+                            data-text="บริการเพื่อนักลงทุน">
+                            <span class="link-text">บริการเพื่อนักลงทุน</span>
+                        </a>
+                        <ul id="menu-channel-fund-child-level1" class="menu-header-child-level1-panel"
+                            data-height="160">
+                            <li class="hide-mobile arrow-head-menu m3">
+                                <div></div>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/download" class="menu-header-list-level1-link">
+                                    <span class="link-level1-text">แบบฟอร์ม</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/service/fif-calendar" class="menu-header-list-level1-link">
+                                    <span class="link-level1-text">ปฏิทินซื้อขายกองทุน</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/suitability" class="menu-header-list-level1-link">
+                                    <span class="link-level1-text">ประเมินความเสี่ยงผู้ลงทุน</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/tax-calculation" class="menu-header-list-level1-link">
+                                    <span class="link-level1-text">คำนวณภาษี</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-contact-us" class='menu-header-list has-sub-menu '>
+                        <a href="javascript:void(0)" class="menu-header-list-link no-link" data-text="ติดต่อเรา">
+                            <span class="link-text">ติดต่อเรา</span>
+                        </a>
+                        <ul id="menu-contact-child-level1" class="menu-header-child-level1-panel" data-height="80">
+                            <li class="hide-mobile arrow-head-menu m1">
+                                <div></div>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/contact" class="menu-header-list-level1-link" data-text="ติดต่อเรา">
+                                    <span class="link-level1-text">ติดต่อเรา</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="/th/career" class="menu-header-list-level1-link" data-text="ร่วมงานกับเรา">
+                                    <span class="link-level1-text">ร่วมงานกับเรา</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-online-service" class='menu-header-list has-sub-menu visible-xs'>
+                        <a href="javascript:void(0)" class="menu-header-list-link" data-text="บริการออนไลน์">
+                            <span class="link-text">บริการออนไลน์</span>
+                        </a>
+                        <ul id="menu-online-service-child-level1" class="menu-header-child-level1-panel"
+                            data-height="120">
+                            <li class="hide-mobile arrow-head-menu">
+                                <div></div>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="https://echannel.uobam.co.th/fundcyber" class="menu-header-list-level1-link"
+                                    data-text="กองทุนรวม">
+                                    <span class="link-level1-text">กองทุนรวม</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="https://echannel.uobam.co.th/provident" class="menu-header-list-level1-link"
+                                    data-text="กองทุนสำรองเลี้ยงชีพ">
+                                    <span class="link-level1-text">กองทุนสำรองเลี้ยงชีพ</span>
+                                </a>
+                            </li>
+                            <li class="menu-header-child-level1-list">
+                                <a href="https://online.uobam.co.th/private" class="menu-header-list-level1-link"
+                                    data-text="กองทุนส่วนบุคคล">
+                                    <span class="link-level1-text">กองทุนส่วนบุคคล</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-header-list visible-xs">
+                        <a href="http://www.uobam.co.th/ad/QISQ22016.mp4" class="menu-header-list-link"
+                            data-text="QUARTERLY STRATEGY">
+                            <span class="link-text">กลยุทธ์การลงทุนรายไตรมาส</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-header-list visible-xs">
+                        <a href="/th/annualreport/1" class="menu-header-list-link" data-text="ANNUAL REPORT">
+                            <span class="link-text">รายงานประจำปี</span>
+                        </a>
+                    </li>
+                    <li class="menu-header-list visible-xs">
+                        <a href="/th/research" class="menu-header-list-link" data-text="RESEARCH">
+                            <span class="link-text">บทวิเคราะห์</span>
+                        </a>
+                    </li>
+                    <li class="menu-header-list visible-xs">
+                        <a href="/th/announcement" class="menu-header-list-link" data-text="ANNOUNCEMENT">
+                            <span class="link-text">ประกาศเพื่อนักลงทุน</span>
+                        </a>
+                    </li>
+                    <li class="menu-header-list visible-xs">
+                        <a href="/th/activities" class="menu-header-list-link" data-text="ACTIVITY">
+                            <span class="link-text">กิจกรรม</span>
+                        </a>
+                    </li>
+                    <li class="menu-header-list visible-xs">
+                        <a href="/th/publication" class="menu-header-list-link" data-text="UPCOMING">
+                            <span class="link-text">ข่าวประชาสัมพันธ์</span>
+                        </a>
+                    </li>
+                    <li class="menu-header-list visible-xs">
+                        <a href="/th/report" class="menu-header-list-link" data-text="REPORT">
+                            <span class="link-text">รายงาน</span>
+                        </a>
+                    </li>
+
+
+
+                    <li id="menu-search-lang" class='menu-header-list menu-header-search-lang'>
+                        <span class="box-search-lang">
+                            <span id="box-search" class="icon-core box-search ">
+                                <span id="form-search-panel">
+                                    <form method="post" action="/th/search">
+                                        <input name="__RequestVerificationToken" type="hidden"
+                                            value="esCHs_TSWXw0snOH3p-rfskeqrJbXeWsVQMtjYM6Zkrgzc1Ea3Kqp7dVrmLRHW6yLaoVFQo4uY0OM0TuVAtiA7MkO6OAz0H07zbisYLa8eg1" />
+                                        <input type="text" id="search-header" name="q" class="f_b"
+                                            placeholder="พิมพ์คำที่ต้องการค้นหา" autocomplete="off" />
+                                        <button type="submit" id="icon-search-submit"></button>
+                                    </form>
+                                    <span id="icon-search-close">
+                                        <span class="close-left"></span>
+                                        <span class="close-right"></span>
+                                    </span>
+                                    <aside id="suggest-box">
+                                        <section id="suggest-box-inner">
+                                            <h3 id="suggest-title" class="f_med">คำค้นหาแนะนำสำหรับคุณ</h3>
+                                            <ul id="suggest-list-panel"></ul>
+                                        </section>
+                                    </aside>
+                                </span>
+                            </span>
+                            <span class="box-line"></span>
+
+
+                            <a href="https://www.uobam.co.th/en/tax-calculation" class="box-lang f_b f_thai">EN</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="float-menu-home">
+                <div id="header-online-service" class="float-menu-home-inner">
+                    <div class="icon-core float-menu-home-icon"></div>
+                    <span>บริการออนไลน์</span>
+                </div>
+            </div>
+            <ul id="float-menu-home-service">
+                <li class="menu-header-full">
+                    <span class="list-full-box-inner">
+                        <span class="list-full-box-left">
+                            <span class="text-top f_b">บริการออนไลน์</span>
+
+                        </span>
+                        <span class="list-full-box-right">
+                            <a id="service-mutual-fund-link" href="https://echannel.uobam.co.th/fundcyber"
+                                class="menu-header-list-link" target="_blank">
+                                <span class="cover icon-core"></span>
+                                <span class="cover-top"></span>
+                                <span class="link-text f_medium">กองทุน<span
+                                        class="text-light f_light">รวม</span></span>
+                                <!-- <span class="arrow-active icon-core"></span> -->
+                            </a>
+                            <a id="service-provident-fund-link" href="https://echannel.uobam.co.th/provident"
+                                class="menu-header-list-link" target="_blank">
+                                <span class="cover icon-core"></span>
+                                <span class="cover-top"></span>
+                                <span class="link-text f_medium">กองทุน<span
+                                        class="text-light f_light">สำรองเลี้ยงชีพ</span></span>
+                                <!-- <span class="arrow-active icon-core"></span> -->
+                            </a>
+                            <a id="service-private-fund-link" href="https://online.uobam.co.th/private"
+                                class="menu-header-list-link" target="_blank">
+                                <span class="cover icon-core"></span>
+                                <span class="cover-top"></span>
+                                <span class="link-text f_medium">กองทุน<span
+                                        class="text-light f_light">ส่วนบุคคล</span></span>
+                                <!-- <span class="arrow-active icon-core"></span> -->
+                            </a>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="body">
+        <section id="content" class="content-wrapper main-content clear-fix">
+
+
+            <div class="taxcal-banner online">
+                <div class="taxcal-banner-box">
+                    <div class="taxcal-banner-title">เครื่องมือ<br class="visible-custom" />คำนวณภาษี</div>
+                </div>
+            </div>
+            <div class="block-size red">
+                <div class="tax-form" id="form-first">
+                    <form method="post" action="" onsubmit="return step_one()" autocomplete="off">
+                        <input name="__RequestVerificationToken" type="hidden"
+                            value="5tJSi4zzXyEA6xLrIYCn1SnwLBPFUygfjEcy2kxegZS5MTHsQaODOgkHdVk8lN9e2pI_qEtH0h4MILGSGHV8fyIvRSZdwOirmKb9sX5ROSk1" />
+                        <div class="tax-head red">รายได้ที่ต้องเสียภาษีของคุณ</div>
+                        <div class="tax-form-content">
+                            <div class="tax-align-center">
+                                <div class="tax-col-10 tax-pull-left align-right valign-middle">
+                                    <div class="d-40">เงินเดือน:</div>
+                                </div>
+                                <div class="tax-col-80 tax-pull-left">
+                                    <input type="text" name="income" onkeyup="onlyletter(event)"
+                                        onkeypress="onlyletterPress(event)" class="tax-input">
+                                    <div class="show-mobile custom-currency">บาท</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-left valign-middle hide-mobile-table">
+                                    <div class="d-40">บาท/เดือน</div>
+                                </div>
+                                <div class="cleartax tax-p-20"></div>
+                                <div class="tax-col-10 tax-pull-left align-right valign-middle">
+                                    <div class="d-40">โบนัส:</div>
+                                </div>
+                                <div class="tax-col-80 tax-pull-left">
+                                    <input type="text" name="bonus" onkeyup="onlyletter(event)"
+                                        onkeypress="onlyletterPress(event)" class="tax-input">
+                                    <div class="show-mobile custom-currency">บาท</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-left valign-middle hide-mobile-table">
+                                    <div class="d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-20"></div>
+                                <div class="tax-col-10 tax-pull-left align-right valign-middle">
+                                    <div class="d-40">รายได้อื่น ๆ ทั้งปี:</div>
+                                </div>
+                                <div class="tax-col-80 tax-pull-left">
+                                    <input type="text" name="otherincome" onkeyup="onlyletter(event)"
+                                        onkeypress="onlyletterPress(event)" class="tax-input">
+                                    <div class="show-mobile custom-currency">บาท</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-left valign-middle hide-mobile-table">
+                                    <div class="d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-50"></div>
+                            </div>
+                            <div class="sum-tax b2 sum_header_space" id="result-income">
+                                <div class="tax-align-center tax-mobile-center">
+                                    <div class="tax-col-10 tax-pull-left align-right valign-middle m">
+                                        <div class="d-50 sum_header">รายได้ทั้งหมดต่อปี:</div>
+                                    </div>
+                                    <div class="tax-col-80 tax-pull-left tax-strong valign-middle m">
+                                        <div class="align-right d-50 pr10" id="total-income">0.00</div>
+                                    </div>
+                                    <div class="tax-col-10 tax-pull-left valign-middle l">
+                                        <div class="d-50">บาท<span class="hide-mobile-inline">/ปี</span></div>
+                                    </div>
+                                    <div class="cleartax"></div>
+                                </div>
+                            </div>
+                            <div class="cleartax tax-p-50"></div>
+                            <div class="tax-align-center m button_panel" align="center">
+                                <div class="tax-col-50 tax-pull-left align-right">
+
+                                    <button type="submit" class="tax-btn">ต่อไป</button>
+                                </div>
+                                <div class="tax-col-50 tax-pull-left m">
+                                </div>
+                                <div class="cleartax tax-p-60"></div>
+                            </div>
+
+                            <div class="tax-hr none show-mobile"></div>
+                            <div class="tax-remark show-mobile">เครื่องมือคำนวณนี้
+                                จัดทำขึ้นเพื่อวัตถุประสงค์ในการให้ข้อมูลแก่ผู้ที่สนใจ
+                                ความถูกต้องขึ้นอยู่กับข้อมูลของผู้กรอกแบบประเมิน
+                                และการตรวจสอบภาษีของเจ้าหน้าที่กรมสรรพากร บริษัทมิอาจรับรองความถูกต้องได้ ทั้งนี้
+                                บริษัทอาจมีการแก้ไข เพิ่มเติม
+                                เปลี่ยนแปลงข้อมูลรวมทั้งสูตรการคำนวณโดยไม่ต้องแจ้งให้ทราบล่วงหน้า
+                                บริษัทขอสงวนสิทธิ์ในข้อมูล รวมทั้งสูตรการคำนวณนี้ ห้ามมิให้ผู้ใดใช้ประโยชน์ ทำซ้ำ
+                                ดัดแปลง นำออกแสดง ทำให้ปรากฏหรือเผยแพร่ต่อสาธารณชน ไม่ว่าด้วยประการใดๆ
+                                ซึ่งข้อมูลในเอกสารนี้ไม่ว่าทั้งหมด หรือบางส่วน
+                                เว้นแต่ได้รับอนุญาตเป็นหนังสือจากบริษัทเป็นการล่วงหน้า</div>
+                        </div>
+                    </form>
+                    <div class="tax-hr hide-mobile"></div>
+                    <div class="cleartax"></div>
+                    <div class="tax-remark hide-mobile">เครื่องมือคำนวณนี้
+                        จัดทำขึ้นเพื่อวัตถุประสงค์ในการให้ข้อมูลแก่ผู้ที่สนใจ
+                        ความถูกต้องขึ้นอยู่กับข้อมูลของผู้กรอกแบบประเมิน และการตรวจสอบภาษีของเจ้าหน้าที่กรมสรรพากร
+                        บริษัทมิอาจรับรองความถูกต้องได้ ทั้งนี้ บริษัทอาจมีการแก้ไข เพิ่มเติม
+                        เปลี่ยนแปลงข้อมูลรวมทั้งสูตรการคำนวณโดยไม่ต้องแจ้งให้ทราบล่วงหน้า บริษัทขอสงวนสิทธิ์ในข้อมูล
+                        รวมทั้งสูตรการคำนวณนี้ ห้ามมิให้ผู้ใดใช้ประโยชน์ ทำซ้ำ ดัดแปลง นำออกแสดง
+                        ทำให้ปรากฏหรือเผยแพร่ต่อสาธารณชน ไม่ว่าด้วยประการใดๆ ซึ่งข้อมูลในเอกสารนี้ไม่ว่าทั้งหมด
+                        หรือบางส่วน เว้นแต่ได้รับอนุญาตเป็นหนังสือจากบริษัทเป็นการล่วงหน้า</div>
+                </div>
+                <div class="tax-form" id="form-second">
+                    <form method="post" action="" onsubmit="return step_two()" autocomplete="off">
+                        <div class="tax-head min">ค่าใช้จ่ายและค่าลดหย่อน</div>
+                        <div class="tax-form-content">
+                            <div class="tax-align-center">
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle">
+                                    <div class="d-40">ค่าใช้จ่าย:</div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2">
+                                    <div class="tax-blue f_med d-40" id="total-payout">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div class="d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle">
+                                    <div class="d-40">ค่าลดหย่อน:</div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2">
+                                    <div class="tax-blue f_med d-40">60,000.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div class="d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                    <div class="d-40">สถานภาพ:</div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right mf">
+                                    <div class="tax-col-50 tax-pull-left np mf">
+                                        <select class="select2" name="relationship">
+                                            <option value="0">โสด</option>
+                                            <option value="0">หย่า</option>
+                                            <option value="0">คู่สมรสมีเงินได้ (แยกยื่น)</option>
+                                            <option value="60000">คู่สมรสไม่มีเงินได้</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle">
+                                    <div class="d-40">ค่าลดหย่อนคู่สมรส:</div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2">
+                                    <div class="tax-blue f_med d-40" id="discount-rs">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div class="d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                    <div class="d-40">ค่าลดหย่อนบุตร (ไม่จำกัดจำนวน)</div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2 nm sec-70">
+                                    <div class="tax-pull-left">
+                                        <input type="text" name="student" value="0" onkeyup="onlyletter(event)"
+                                            onkeypress="onlyletterPress(event)" class="tax-input number l">
+                                        <div class="arrow-number"><span class="up children"></span><span
+                                                class="down children"></span></div>
+                                    </div>
+                                    <div class="tax-blue f_med tax-pull-right d-40" id="discount-st">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div class="mg11 d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+
+                                <div class="cleartax tax-p-10 m"></div>
+                                <div class="sum-tax sum_header_space">
+                                    <div class="tax-align-center tax-mobile-center">
+                                        <div class="tax-col-20 tax-pull-left align-right valign-middle h-50">
+                                            <div class="d-50 d-m sum_header">รวมค่าลดหย่อนบุตร:</div>
+                                        </div>
+                                        <div class="tax-col-70 tax-pull-left tax-strong valign-middle f2 h-50">
+                                            <div class="align-right d-50 d-m" id="total-discount-child">0.00</div>
+                                        </div>
+                                        <div class="tax-col-10 tax-pull-right last-baht valign-middle l form-2">
+                                            <div class="d-50">บาท</div>
+                                        </div>
+                                        <div class="cleartax"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tax-align-center m-60">
+                                <div class="cleartax tax-p-50"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                    <div class="d-40">ค่าลดหย่อน บิดา-มารดาตัวเอง:</div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2 nm sec-70">
+                                    <div class="tax-pull-left">
+                                        <input type="text" name="mother" value="0" onkeyup="onlyletter(event)"
+                                            onkeypress="onlyletterPress(event)" class="tax-input number l">
+                                        <div class="arrow-number"><span class="up mother"></span><span
+                                                class="down mother"></span></div>
+                                    </div>
+                                    <div class="tax-blue f_med tax-pull-right" id="discount-mother">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div class="mg11 d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                    <div class="lh-22">
+                                        ค่าลดหย่อน บิดา-มารดาคู่สมรส<br class="hide-mobile">
+                                        (เฉพาะกรณีคู่สมรสไม่มีรายได้):
+                                    </div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2 nm sec-70">
+                                    <div class="tax-pull-left" id="div-rs">
+                                        <input type="text" name="mother-rs-no-income" value="0"
+                                            onkeyup="onlyletter(event)" onkeypress="onlyletterPress(event)"
+                                            class="tax-input number l" disabled>
+                                        <div class="arrow-number"><span class="up disabled mother-rs"></span><span
+                                                class="down disabled mother-rs"></span></div>
+                                    </div>
+                                    <div class="tax-blue f_med tax-pull-right" id="total-discount-mother-rs">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2 form-2">
+                                    <div class="mg11  d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10 m"></div>
+                            </div>
+                            <div class="sum-tax sum_header_space">
+                                <div class="tax-align-center tax-mobile-center">
+                                    <div class="tax-col-20 tax-pull-left align-right valign-middle h-50 l2m">
+                                        <div class="d-50 d-m sum_header_2">รวมค่าลดหย่อนบิดา-มารดา:</div>
+                                    </div>
+                                    <div class="tax-col-70 tax-pull-left tax-strong valign-middle f2 h-50">
+                                        <div class="align-right d-50 d-m" id="total-discount-mother">0.00</div>
+                                    </div>
+                                    <div class="tax-col-10 tax-pull-right last-baht valign-middle l form-2">
+                                        <div class="d-50">บาท</div>
+                                    </div>
+                                    <div class="cleartax"></div>
+                                </div>
+                            </div>
+
+                            <div class="tax-align-center m-60">
+                                <div class="cleartax tax-p-50"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                    <div class="d-40">ค่าลดหย่อน ดูแลคนพิการ:</div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2 nm sec-70">
+                                    <div class="tax-pull-left">
+                                        <input type="text" name="cripple" value="0" onkeyup="onlyletter(event)"
+                                            onkeypress="onlyletterPress(event)" class="tax-input number l">
+                                        <div class="arrow-number"><span class="up cripple"></span><span
+                                                class="down cripple"></span></div>
+                                    </div>
+                                    <div class="tax-blue f_med tax-pull-right" id="cripple">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div class="mg11 d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle">
+                                    <div class="d-40">เงินสะสมประกันสังคม:</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-left np mx">
+                                    <input type="text" name="sso" class="tax-input" onkeyup="onlyletter(event)"
+                                        onkeypress="onlyletterPress(event)">
+                                </div>
+                                <div class="tax-col-10 tax-pull-left valign-middle hide-mobile-table">
+                                    <div class="d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10 "></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                    <div class="lh-22">
+                                        เงินสะสมที่จ่ายเข้า<br class="hide-mobile">
+                                        กองทุนสำรองเลี้ยงชีพ หรือ กบข.:
+                                    </div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2 nm sec-70">
+                                    <div class="tax-pull-left">
+                                        <input type="text" name="provfund" value="0" onkeyup="onlyletter(event)"
+                                            onkeypress="onlyletterPress(event)" class="tax-input number l">
+                                        <div class="arrow-number"><span class="up provfund"></span><span
+                                                class="down provfund"></span></div>
+                                    </div>
+                                    <div class="tax-pull-left percen">%</div>
+                                    <div class="tax-blue f_med tax-pull-right" id="discount-provfund">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div class="mg11 d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                    <div class="d-40">ค่าดอกเบี้ยกู้บ้าน: <span class="show-mobile-inline">(บาท
+                                            หักได้ตามจริง)</span></div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-left np mx">
+                                    <input type="text" name="home-interest" onkeyup="onlyletter(event)"
+                                        onkeypress="onlyletterPress(event)" class="tax-input">
+                                </div>
+                                <div class="tax-col-10 tax-pull-left cs-130 valign-middle hide-mobile-table">
+                                    <div class="d-40">บาท หักได้ตามจริง</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-left valign-middle cs-number">
+                                    <div class="tax-blue f_med d-40" id="discount-home-interest">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div class="d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                    <div class="d-40">ค่าประกันชีวิต: </div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-left np mx">
+                                    <div><input type="text" name="inc" class="tax-input" onkeyup="onlyletter(event)"
+                                            onkeypress="onlyletterPress(event)">
+                                        <div class="show-mobile custom-currency">บาท</div>
+                                    </div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-left valign-middle hide-mobile-table">
+                                    <div class="d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                            </div>
+                            <div class="sum-tax sum_header_space">
+                                <div class="tax-align-center tax-mobile-center">
+                                    <div class="tax-col-20 tax-pull-left align-right valign-middle  h-50 l2">
+                                        <div class="d-50 d-s sum_header_2">รวมเงินได้หลังหักค่าใช้จ่ายและค่าลดหย่อน:
+                                        </div>
+                                    </div>
+                                    <div class="tax-col-70 tax-pull-left tax-strong valign-middle  f2 h-50">
+                                        <div class="align-right d-50 d-s" id="total-income-discount">0.00</div>
+                                    </div>
+                                    <div class="tax-col-10 tax-pull-right last-baht valign-middle l form-2">
+                                        <div class="d-50">บาท</div>
+                                    </div>
+                                    <div class="cleartax"></div>
+                                </div>
+                            </div>
+                            <div class="tax-align-center ">
+                                <div class="cleartax tax-p-20"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                    <div class="d-40">ค่าบริจาคการศึกษา: <span class="show-mobile-inline">(บาท
+                                            หักได้ตามจริง)</span></div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-left np mx">
+                                    <input type="text" name="donate-edu" class="tax-input" onkeyup="onlyletter(event)"
+                                        onkeypress="onlyletterPress(event)">
+                                </div>
+                                <div class="tax-col-10 tax-pull-left cs-130 valign-middle hide-mobile-table">
+                                    <div class="d-40">บาท หักได้ตามจริง</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-left valign-middle cs-number">
+                                    <div class="tax-blue f_med d-40" id="donate-edu">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div class="d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                            </div>
+                            <div class="sum-tax sum_header_space">
+                                <div class="tax-align-center tax-mobile-center">
+                                    <div class="tax-col-20 tax-pull-left align-right valign-middle  h-50 l2">
+                                        <div class="d-50 d-s sum_header_2">รวมเงินได้หลังหักค่าบริจาคการศึกษา:</div>
+                                    </div>
+                                    <div class="tax-col-70 tax-pull-left tax-strong valign-middle  f2 h-50">
+                                        <div class="align-right d-50 d-s" id="total-income-discount-edu">0.00</div>
+                                    </div>
+                                    <div class="tax-col-10 tax-pull-right last-baht valign-middle l form-2">
+                                        <div class="d-50">บาท</div>
+                                    </div>
+                                    <div class="cleartax"></div>
+                                </div>
+                            </div>
+                            <div class="tax-align-center ">
+                                <div class="cleartax tax-p-10"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                    <div class="d-40">ค่าบริจาคอื่นๆ: <span class="show-mobile-inline">(บาท
+                                            หักได้ตามจริง)</span></div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-left np mx">
+                                    <input type="text" name="donate" class="tax-input" onkeyup="onlyletter(event)"
+                                        onkeypress="onlyletterPress(event)">
+                                </div>
+                                <div class="tax-col-10 tax-pull-left cs-130 valign-middle hide-mobile-table">
+                                    <div class="d-40">บาท หักได้ตามจริง</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-left valign-middle cs-number">
+                                    <div class="tax-blue f_med d-40" id="donate">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div class="d-40">บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                            </div>
+                            <div class="sum-tax sum_header_space">
+                                <div class="tax-align-center tax-mobile-center">
+                                    <div class="tax-col-20 tax-pull-left align-right valign-middle  h-50 l2">
+                                        <div class="d-50 d-s sum_header_2">รวมเงินได้สุทธิ:</div>
+                                    </div>
+                                    <div class="tax-col-70 tax-pull-left tax-strong valign-middle  f2 h-50">
+                                        <div class="align-right d-50 d-s" id="total-income-net">0.00</div>
+                                    </div>
+                                    <div class="tax-col-10 tax-pull-right last-baht valign-middle l form-2">
+                                        <div class="d-50">บาท</div>
+                                    </div>
+                                    <div class="cleartax"></div>
+                                </div>
+                            </div>
+                            <div class="cleartax  m-60 tax-p-20-2"></div>
+                            <div class="tax-align-center m button_panel">
+                                <div class="tax-col-50 tax-pull-left align-right">
+                                    <button type="button" data-current="form-second"
+                                        class="tax-btn back">ย้อนกลับ</button>
+                                </div>
+                                <div class="tax-col-50 tax-pull-left m">
+                                    <button type="submit" class="tax-btn">ต่อไป</button>
+                                </div>
+                                <div class="cleartax tax-p-60"></div>
+                            </div>
+                            <div class="tax-hr none show-mobile"></div>
+                            <div class="tax-remark show-mobile">เครื่องมือคำนวณนี้
+                                จัดทำขึ้นเพื่อวัตถุประสงค์ในการให้ข้อมูลแก่ผู้ที่สนใจ
+                                ความถูกต้องขึ้นอยู่กับข้อมูลของผู้กรอกแบบประเมิน
+                                และการตรวจสอบภาษีของเจ้าหน้าที่กรมสรรพากร บริษัทมิอาจรับรองความถูกต้องได้ ทั้งนี้
+                                บริษัทอาจมีการแก้ไข เพิ่มเติม
+                                เปลี่ยนแปลงข้อมูลรวมทั้งสูตรการคำนวณโดยไม่ต้องแจ้งให้ทราบล่วงหน้า
+                                บริษัทขอสงวนสิทธิ์ในข้อมูล รวมทั้งสูตรการคำนวณนี้ ห้ามมิให้ผู้ใดใช้ประโยชน์ ทำซ้ำ
+                                ดัดแปลง นำออกแสดง ทำให้ปรากฏหรือเผยแพร่ต่อสาธารณชน ไม่ว่าด้วยประการใดๆ
+                                ซึ่งข้อมูลในเอกสารนี้ไม่ว่าทั้งหมด หรือบางส่วน
+                                เว้นแต่ได้รับอนุญาตเป็นหนังสือจากบริษัทเป็นการล่วงหน้า</div>
+                        </div>
+                    </form>
+                    <div class="tax-hr hide-mobile"></div>
+                    <div class="cleartax"></div>
+                    <div class="tax-remark hide-mobile">เครื่องมือคำนวณนี้
+                        จัดทำขึ้นเพื่อวัตถุประสงค์ในการให้ข้อมูลแก่ผู้ที่สนใจ
+                        ความถูกต้องขึ้นอยู่กับข้อมูลของผู้กรอกแบบประเมิน และการตรวจสอบภาษีของเจ้าหน้าที่กรมสรรพากร
+                        บริษัทมิอาจรับรองความถูกต้องได้ ทั้งนี้ บริษัทอาจมีการแก้ไข เพิ่มเติม
+                        เปลี่ยนแปลงข้อมูลรวมทั้งสูตรการคำนวณโดยไม่ต้องแจ้งให้ทราบล่วงหน้า บริษัทขอสงวนสิทธิ์ในข้อมูล
+                        รวมทั้งสูตรการคำนวณนี้ ห้ามมิให้ผู้ใดใช้ประโยชน์ ทำซ้ำ ดัดแปลง นำออกแสดง
+                        ทำให้ปรากฏหรือเผยแพร่ต่อสาธารณชน ไม่ว่าด้วยประการใดๆ ซึ่งข้อมูลในเอกสารนี้ไม่ว่าทั้งหมด
+                        หรือบางส่วน เว้นแต่ได้รับอนุญาตเป็นหนังสือจากบริษัทเป็นการล่วงหน้า</div>
+                </div>
+                <div class="tax-form" id="form-third">
+                    <form method="post" action="" onsubmit="return step_three()">
+                        <div class="tax-head min">คำนวณภาษี</div>
+                        <div class="tax-form-content">
+                            <div class="tax-align-center">
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle">
+                                    <div>รวมค่าใช้จ่ายและค่าลดหย่อน:</div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2">
+                                    <div class="tax-blue f_med" id="total-discount-final">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div>บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle">
+                                    <div>รวมเงินได้สุทธิ:</div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2">
+                                    <div class="tax-blue f_med" id="total-income-final">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div>บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                            </div>
+                            <div class="sum-tax sum_header_space">
+                                <div class="tax-align-center tax-mobile-center">
+                                    <div class="tax-col-20 tax-pull-left align-right valign-middle  h-50">
+                                        <div class="d-50 d-s sum_header">ภาษีที่คุณต้องจ่ายปีนี้:</div>
+                                    </div>
+                                    <div class="tax-col-70 tax-pull-left tax-strong valign-middle  f2 h-50">
+                                        <div class="align-right d-50 d-s" id="total-tax">0.00</div>
+                                    </div>
+                                    <div class="tax-col-10 tax-pull-right last-baht valign-middle l form-2">
+                                        <div class="d-50">บาท</div>
+                                    </div>
+                                    <div class="cleartax"></div>
+                                </div>
+                            </div>
+                            <div class="cleartax tax-p-10"></div>
+                            <div class="tax-align-center m50">
+                                <div align="right" class="tax-pull-right">
+                                    <a href="#" id="show-tax-table">ตารางแจกแจงภาษี</a>
+                                </div>
+                            </div>
+                            <div class="cleartax tax-p-10"></div>
+                            <div id="tax-table">
+                                <div id="close-table"></div>
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th class="f_b" width="30%">เงินได้สุทธิ (บาท)</th>
+                                            <th class="f_b" width="30%">อัตราภาษี</th>
+                                            <th class="f_b" width="30%">ภาษีที่ท่านต้องจ่าย</th>
+                                            <th class="hide-mobile">&nbsp;<br>&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="tb f_med">
+                                                <div class="block-tax">0</div> - <div class="block-tax">150,000</div>
+                                            </td>
+                                            <td>0%</td>
+                                            <td id="tax-table-1">0.00</td>
+                                            <td class="hide-mobile">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb f_med">
+                                                <div class="block-tax">150,001</div> - <div class="block-tax">300,000
+                                                </div>
+                                            </td>
+                                            <td>5%</td>
+                                            <td id="tax-table-2">0.00</td>
+                                            <td class="hide-mobile">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb f_med">
+                                                <div class="block-tax">300,001</div> - <div class="block-tax">500,000
+                                                </div>
+                                            </td>
+                                            <td>10%</td>
+                                            <td id="tax-table-3">0.00</td>
+                                            <td class="hide-mobile">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb f_med">
+                                                <div class="block-tax">500,001</div> - <div class="block-tax">750,000
+                                                </div>
+                                            </td>
+                                            <td>15%</td>
+                                            <td id="tax-table-4">0.00</td>
+                                            <td class="hide-mobile">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb f_med">
+                                                <div class="block-tax">750,001</div> - <div class="block-tax">1,000,000
+                                                </div>
+                                            </td>
+                                            <td>20%</td>
+                                            <td id="tax-table-5">0.00</td>
+                                            <td class="hide-mobile">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb f_med">
+                                                <div class="block-tax">1,000,001</div> - <div class="block-tax">
+                                                    2,000,000</div>
+                                            </td>
+                                            <td>25%</td>
+                                            <td id="tax-table-6">0.00</td>
+                                            <td class="hide-mobile">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb f_med">
+                                                <div class="block-tax">2,000,001</div> - <div class="block-tax">
+                                                    5,000,000</div>
+                                            </td>
+                                            <td>30%</td>
+                                            <td id="tax-table-7">0.00</td>
+                                            <td class="hide-mobile">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb f_med">
+                                                <div class="block-tax">5,000,001</div> - <div class="block-tax">ขึ้นไป
+                                                </div>
+                                            </td>
+                                            <td>35%</td>
+                                            <td id="tax-table-8">0.00</td>
+                                            <td class="hide-mobile">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb f_med"></td>
+                                            <td class="tb f_med">รวม</td>
+                                            <td class="td f_med" id="tax-table-sum">0.00</td>
+                                            <td class="hide-mobile">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="cleartax tax-p-10"></div>
+                            <div class="tax-head min">การลงทุนใน RMF และ LTF กรณีลงทุน<br
+                                    class="show-mobile">เต็มเพดานที่กฎหมายกำหนด</div>
+                            <div class="tax-align-center">
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle">
+                                    <div>จำนวนเงินสูงสุดที่ลงทุน RMF :</div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2">
+                                    <div class="tax-blue f_med" id="max-rmf">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div>บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle">
+                                    <div>จำนวนเงินสูงสุดที่ลงทุน LTF ได้:</div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2">
+                                    <div class="tax-blue f_med" id="max-ltf">0.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div>บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                                <div class="tax-col-20 tax-pull-left align-right valign-middle">
+                                    <div>ค่าประกันชีวิตสูงสุด:</div>
+                                </div>
+                                <div class="tax-col-70 tax-pull-left align-right valign-middle f2">
+                                    <div class="tax-blue f_med">100,000.00</div>
+                                </div>
+                                <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2">
+                                    <div>บาท</div>
+                                </div>
+                                <div class="cleartax tax-p-10"></div>
+                            </div>
+                            <div class="tax-head min">การลงทุนใน RMF และ LTF ประกันชีวิต และประกันชีวิตแบบบำนาญ
+                                ตามที่ท่านต้องการ</div>
+                            <div class="cleartax tax-p-10"></div>
+                            <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                <div class="d-40">จำนวนเงินที่ท่านต้องการลงทุนเพิ่มใน RMF:</div>
+                            </div>
+                            <div class="tax-col-70 tax-pull-left align-right valign-middle f2 custom-input">
+                                <div><input type="text" name="rmf" class="tax-input" onkeyup="onlyletter(event)"
+                                        onkeypress="onlyletterPress(event)">
+                                    <div class="show-mobile custom-currency">บาท</div>
+                                </div>
+                            </div>
+                            <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2 hide-mobile-table">
+                                <div class="d-40">บาท</div>
+                            </div>
+                            <div class="cleartax tax-p-10"></div>
+                            <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                <div class="d-40">จำนวนเงินที่ท่านต้องการลงทุนเพิ่มใน LTF:</div>
+                            </div>
+                            <div class="tax-col-70 tax-pull-left align-right valign-middle f2 custom-input">
+                                <div><input type="text" name="ltf" class="tax-input" onkeyup="onlyletter(event)"
+                                        onkeypress="onlyletterPress(event)">
+                                    <div class="show-mobile custom-currency">บาท</div>
+                                </div>
+                            </div>
+                            <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2 hide-mobile-table">
+                                <div class="d-40">บาท</div>
+                            </div>
+                            <div class="cleartax tax-p-10"></div>
+                            <div class="tax-col-20 tax-pull-left align-right valign-middle mf">
+                                <div>ค่าประกันชีวิตแบบบำนาญที่<br>ท่านต้องการลงทุนเพิ่ม:</div>
+                            </div>
+                            <div class="tax-col-70 tax-pull-left align-right valign-middle f2 custom-input">
+                                <div><input type="text" name="pvf" class="tax-input" onkeyup="onlyletter(event)"
+                                        onkeypress="onlyletterPress(event)">
+                                    <div class="show-mobile custom-currency">บาท</div>
+                                </div>
+                            </div>
+                            <div class="tax-col-10 tax-pull-right last-baht valign-middle form-2 hide-mobile-table">
+                                <div class="d-40">บาท</div>
+                            </div>
+
+                            <div class="cleartax tax-p-10"></div>
+                            <div class="sum-tax">
+                                <div class="tax-align-center tax-mobile-center">
+                                    <div class="tax-col-20 tax-pull-left align-right valign-middle  h-50">
+                                        <div class="small">รวมเงินได้สุทธิ:</div>
+                                    </div>
+                                    <div class="tax-col-70 tax-pull-left tax-strong valign-middle  f2 h-50">
+                                        <div class="align-right small f_med pr15" id="fund-income">0.00</div>
+                                    </div>
+                                    <div class="tax-col-10 tax-pull-right last-baht valign-middle l form-2">
+                                        <div class="small">บาท</div>
+                                    </div>
+                                    <div class="cleartax"></div>
+                                    <div class="tax-hr none"></div>
+                                    <div class="tax-col-20 tax-pull-left align-right valign-middle  h-50">
+                                        <div class="small">ภาษีที่ต้องเสีย:</div>
+                                    </div>
+                                    <div class="tax-col-70 tax-pull-left tax-strong valign-middle  f2 h-50">
+                                        <div class="align-right small f_med pr15" id="fund-tax">0.00</div>
+                                    </div>
+                                    <div class="tax-col-10 tax-pull-right last-baht valign-middle l form-2">
+                                        <div class="small">บาท</div>
+                                    </div>
+                                    <div class="cleartax"></div>
+                                    <div class="tax-hr none"></div>
+                                    <div class="tax-col-20 tax-pull-left align-right valign-middle  h-50">
+                                        <div class="d-50"><span class='hide_340'>ท่าน</span>ประหยัดภาษีได้:</div>
+                                    </div>
+                                    <div class="tax-col-70 tax-pull-left tax-strong valign-middle  f2 h-50">
+                                        <div class="align-right f_med d-50 pr15" id="fund-discount">0.00</div>
+                                    </div>
+                                    <div class="tax-col-10 tax-pull-right last-baht valign-middle l form-2">
+                                        <div class="d-50">บาท</div>
+                                    </div>
+                                    <div class="cleartax"></div>
+                                </div>
+                            </div>
+                            <div class="cleartax  m-60 tax-p-20-2"></div>
+                            <div class="tax-align-center m button_panel">
+                                <div class="tax-col-50 tax-pull-left align-right">
+                                    <button type="button" data-current="form-third"
+                                        class="tax-btn back">ย้อนกลับ</button>
+                                </div>
+                                <div class="tax-col-50 tax-pull-left m">
+                                    <button type="reset" data-current="form-third"
+                                        class="tax-btn reset">เริ่มใหม่</button>
+                                </div>
+                                <div class="cleartax tax-p-60"></div>
+                            </div>
+
+                            <div class="tax-hr none show-mobile"></div>
+                            <div class="tax-remark show-mobile">เครื่องมือคำนวณนี้
+                                จัดทำขึ้นเพื่อวัตถุประสงค์ในการให้ข้อมูลแก่ผู้ที่สนใจ
+                                ความถูกต้องขึ้นอยู่กับข้อมูลของผู้กรอกแบบประเมิน
+                                และการตรวจสอบภาษีของเจ้าหน้าที่กรมสรรพากร บริษัทมิอาจรับรองความถูกต้องได้ ทั้งนี้
+                                บริษัทอาจมีการแก้ไข เพิ่มเติม
+                                เปลี่ยนแปลงข้อมูลรวมทั้งสูตรการคำนวณโดยไม่ต้องแจ้งให้ทราบล่วงหน้า
+                                บริษัทขอสงวนสิทธิ์ในข้อมูล รวมทั้งสูตรการคำนวณนี้ ห้ามมิให้ผู้ใดใช้ประโยชน์ ทำซ้ำ
+                                ดัดแปลง นำออกแสดง ทำให้ปรากฏหรือเผยแพร่ต่อสาธารณชน ไม่ว่าด้วยประการใดๆ
+                                ซึ่งข้อมูลในเอกสารนี้ไม่ว่าทั้งหมด หรือบางส่วน
+                                เว้นแต่ได้รับอนุญาตเป็นหนังสือจากบริษัทเป็นการล่วงหน้า</div>
+                        </div>
+                    </form>
+                    <div class="tax-hr hide-mobile"></div>
+                    <div class="cleartax"></div>
+                    <div class="tax-remark hide-mobile">เครื่องมือคำนวณนี้
+                        จัดทำขึ้นเพื่อวัตถุประสงค์ในการให้ข้อมูลแก่ผู้ที่สนใจ
+                        ความถูกต้องขึ้นอยู่กับข้อมูลของผู้กรอกแบบประเมิน และการตรวจสอบภาษีของเจ้าหน้าที่กรมสรรพากร
+                        บริษัทมิอาจรับรองความถูกต้องได้ ทั้งนี้ บริษัทอาจมีการแก้ไข เพิ่มเติม
+                        เปลี่ยนแปลงข้อมูลรวมทั้งสูตรการคำนวณโดยไม่ต้องแจ้งให้ทราบล่วงหน้า บริษัทขอสงวนสิทธิ์ในข้อมูล
+                        รวมทั้งสูตรการคำนวณนี้ ห้ามมิให้ผู้ใดใช้ประโยชน์ ทำซ้ำ ดัดแปลง นำออกแสดง
+                        ทำให้ปรากฏหรือเผยแพร่ต่อสาธารณชน ไม่ว่าด้วยประการใดๆ ซึ่งข้อมูลในเอกสารนี้ไม่ว่าทั้งหมด
+                        หรือบางส่วน เว้นแต่ได้รับอนุญาตเป็นหนังสือจากบริษัทเป็นการล่วงหน้า</div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+    <footer class="footer-ipad">
+        <div class="footer-content-head">
+            <div class="footer-content-head-inner f_roman">
+                คำเตือน
+                การลงทุนมีความเสี่ยง ผู้ลงทุนควรทำความเข้าใจลักษณะกองทุน นโยบายกองทุน เงื่อนไขผลตอบแทน ความเสี่ยง
+                และผลการดำเนินงานของกองทุนก่อนตัดสินใจลงทุน
+                ผลการดำเนินงานในอดีต/ผลการเปรียบเทียบผลการดำเนินงานที่เกี่ยวข้องกับผลิตภัณฑ์ในตลาดทุน
+                มิได้เป็นสิ่งยืนยันถึงผลการดำเนินงานในอนาคต การลงทุนมีความเสี่ยง
+                จากอัตราแลกเปลี่ยนที่อาจเกิดขึ้นจากการลงทุนในต่างประเทศ
+                ถึงแม้ว่ากองทุนอาจป้องกันความเสี่ยงตามดุลยพินิจของผู้จัดการกองทุนรวม แต่เนื่องจากกองทุนไม่ได้ป้องกัน
+                ความเสี่ยงทั้งจำนวน
+                ผู้ลงทุนอาจขาดทุนหรือได้กำไรจากอัตราแลกเปลี่ยนหรือได้รับเงินคืนต่ำกว่าการลงทุนเริ่มแรกได้
+            </div>
+        </div>
+        <div class="footer-content-bottom">
+            <div class="col-footer-left hide-mobile">
+                <div class="footer-content-bottom-inner f_reg">
+                    &copy; 2019 UOB Asset Management (Thailand) Co., Ltd. All Rights Reserved.
+                </div>
+                <div class="clearfix-nodot"></div>
+            </div>
+            <div class="col-footer-right">
+                <div class="col-center tha">
+                    <div class="footer-subscribe">
+                        <div class="footer-subscribe-text f_med">
+                            สมัครรับข่าวสาร
+                        </div>
+                        <div class="footer-subscribe-form">
+                            <form method="post" action="/th/subscribe/submit" onsubmit="return subscribe();"
+                                id="form-subscribe">
+                                <input name="__RequestVerificationToken" type="hidden"
+                                    value="-vJBKjZHNRmBzxO6fcoUSdkQzVQKNmWx9dwqJBMCgQhwZpa68aKkX2CNGSlUcr6_O9sfX9bSkndk-e2zCpyxSJ_hZZ84wU_GOcqQ_UkRsqk1" />
+                                <input type="text" name="email" class="f_reg" placeholder="อีเมล์ของคุณ"
+                                    value="อีเมล์ของคุณ" onfocus="$(this).val()=='อีเมล์ของคุณ'?$(this).val(''):''"
+                                    onblur="$(this).val()==''?$(this).val('อีเมล์ของคุณ'):''" id="email-subscribe">
+                                <span class="tooltip f_med" id="tooltip-subscribe">รูปแบบอีเมล์ของคุณไม่ถูกต้อง</span>
+                                <span class="tooltip f_med" id="tooltip-subscribe-success"></span>
+                                <div class="btn-subscribe">
+                                    <button type="submit" id="submit-subscribe"></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-phone">
+                        <div class="f_med wealth-text tha">งานบริการนักลงทุน</div>
+                        <div class="f_reg"><a href="tel:027862222">0 2786 2222</a></div>
+                    </div>
+                    <div class="col-sitemap f_med hide-mobile tha">
+                        <a href="#">แผนผังเว็บไซต์</a>
+                    </div>
+                    <div class="clearfix-nodot"></div>
+                </div>
+            </div>
+            <div class="col-footer-left show-mobile">
+                <div class="footer-content-bottom-inner f_reg">
+                    &copy; 2019 UOB Asset Management (Thailand) Co., Ltd. All Rights Reserved.
+                </div>
+                <div class="clearfix-nodot"></div>
+            </div>
+            <div class="clearfix-nodot"></div>
+        </div>
+    </footer>
+    <div class="sitemap  th ">
+        <div class="sitemap-container">
+            <div class="sitemap-colum-3">
+                <div class="sitemap-body">
+                    <div class="sitemap-title"><a href="Javascript:void(0);" class="no-transition">รู้จัก UOBAM</a>
+                    </div>
+                    <div class="sitemap-menu">
+                        <p><a href="/th/about-us/company-profile">ข้อมูลบริษัท</a></p>
+                        <p><a href="/th/about-us/vision-mission">วิสัยทัศน์/พันธกิจ</a></p>
+                        <p><a href="/th/about-us/board-of-director">คณะกรรมการบริษัท</a></p>
+                        <p><a href="/th/about-us/management-team">ทีมผู้บริหาร</a></p>
+                        <p><a href="/th/about-us/awards">รางวัลและความสำเร็จ</a></p>
+                        <p><a href="/th/about-us/policy">นโยบาย</a></p>
+
+                    </div>
+                </div>
+                <div class="sitemap-body">
+                    <div class="sitemap-title"><a href="Javascript:void(0);"
+                            class="no-transition">บริการเพื่อนักลงทุน</a></div>
+                    <div class="sitemap-menu">
+                        <p><a href="/th/download">แบบฟอร์ม</a></p>
+                        <p><a href="/th/service/fif-calendar">ปฏิทินซื้อขายกองทุน</a></p>
+                        <p><a href="/th/suitability">แบบประเมินความเสี่ยง</a></p>
+                        <p><a href="/th/tax-calculation">คำนวณภาษี</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="sitemap-colum-3">
+                <div class="sitemap-body second-body">
+                    <div class="sitemap-title"><a href="Javascript:void(0);" class="no-transition">กองทุนรวม</a></div>
+                    <div class="sitemap-menu">
+                        <p><a href="/th/mutual-fund">กองทุนรวมคืออะไร</a></p>
+                        <p><a href="/th/fund-type">ข้อมูลกองทุนรวม</a></p>
+                        <div class="sitemap-list">
+                            <ul>
+                                <li><a href="/th/fund-type/8/money-market">กองทุนรวมตลาดเงิน</a></li>
+                                <li><a href="/th/fund-type/1/fixed-income">กองทุนรวมตราสารหนี้</a></li>
+                                <li><a href="/th/fund-type/4/mixed">กองทุนรวมผสม</a></li>
+                                <li><a href="/th/fund-type/2/equity">กองทุนรวมหุ้น</a></li>
+                                <li><a href="/th/fund-type/5/long-term-equity">กองทุนรวมหุ้นระยะยาว</a></li>
+                                <li><a href="/th/fund-type/6/retirement">กองทุนรวมเพื่อการเลี้ยงชีพ</a></li>
+                                <li><a href="/th/fund-type/3/foreign-investment">กองทุนรวมต่างประเทศ</a></li>
+                                <li><a href="/th/fund-type/7/property">กองทุนรวมอสังหาริมทรัพย์</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sitemap-menu">
+                        <p>มูลค่าหน่วยลงทุน</p>
+                        <div class="sitemap-list">
+                            <ul>
+                                <li><a href="/th/price/list">มูลค่าหน่วยลงทุน</a></li>
+                                <li><a href="/th/price/previous">มูลค่าหน่วยลงทุนย้อนหลัง</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sitemap-menu">
+                        <p><a href="/th/mutual-fund/performance">ผลการดำเนินงาน</a></p>
+
+                    </div>
+                    <div class="sitemap-menu">
+                        <p>สิทธิประโยชน์ทางภาษี</p>
+                        <div class="sitemap-list">
+                            <ul>
+                                <li><a href="/th/tax-benefit/ltf">กองทุนรวมหุ้นระยะยาว</a></li>
+                                <li><a href="/th/tax-benefit/rmf">กองทุนรวมเพื่อการเลี้ยงชีพ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sitemap-colum-3 ">
+                <div class="sitemap-body third-body">
+                    <div class="sitemap-title"><a href="/th/provident-fund/1">กองทุนสำรองเลี้ยงชีพ</a></div>
+                    <div class="sitemap-title"><a href="/th/private-fund">กองทุนส่วนบุคคล</a></div>
+                    <div class="sitemap-title"><a href="Javascript:void(0);" class="no-transition">ช่องทางการบริการ</a>
+                    </div>
+                    <div class="sitemap-menu">
+                        <p><a href="/th/Channel/OpenAccount">เปิดบัญชีกองทุนรวม</a></p>
+                        <p><a href="/th/Channel/OnlineService">บริการออนไลน์</a> </p>
+                        <div class="sitemap-list">
+                            <ul>
+                                <li>พรีเมียร์ออนไลน์</li>
+                                <li>ขั้นตอนการสมัคร</li>
+                                <li>เอกสารการสมัคร</li>
+                                <li>วิธีการชำระเงิน</li>
+                                <li>การหักบัญชีผ่าน ATM</li>
+                                <li>iinvest</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sitemap-menu">
+
+                        <p><a href="/th/Channel/SellingAgent">ผู้สนับสนุนการขายหรือรับซื้อคืนหน่วยลงทุน</a></p>
+                    </div>
+                </div>
+                <div class="sitemap-body third-body">
+                    <div class="sitemap-menu">
+                        <p class="f_b">ติดต่อเรา</p>
+                        <p><a href="/th/contact">ติดต่อเรา</a></p>
+                        <p><a href="/th/career">ร่วมงานกับเรา</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="sitemap-colum-3">
+
+                <div class="sitemap-body last-body">
+                    <div class="sitemap-title"><a href="Javascript:void(0);" class="no-transition">บริการออนไลน์</a>
+                    </div>
+                    <div class="sitemap-menu">
+                        <p><a href="https://echannel.uobam.co.th/fundcyber">กองทุนรวม</a></p>
+                        <p><a href="https://echannel.uobam.co.th/provident">กองทุนสำรองเลี้ยงชีพ</a></p>
+                        <p><a href="https://online.uobam.co.th/private">กองทุนส่วนบุคคล</a></p>
+                    </div>
+                </div>
+                <div class="sitemap-body last-body">
+                    <div class="sitemap-title"><a
+                            href="http://edge.media-server.com/m/p/buonqjwy">กลยุทธ์การลงทุนรายไตรมาส</a></div>
+                    <div class="sitemap-title"><a href="/th/annualreport/1">รายงานประจำปี</a></div>
+                    <div class="sitemap-title"><a href="/th/research">บทวิเคราะห์</a></div>
+                    <div class="sitemap-title"><a href="/th/announcement">ประกาศเพื่อนักลงทุน</a></div>
+                    <div class="sitemap-title"><a href="/th/activities">กิจกรรม</a></div>
+                    <div class="sitemap-title"><a href="/th/publication">ข่าวประชาสัมพันธ์</a></div>
+                    <div class="sitemap-title"><a href="/th/report">รายงาน</a></div>
+                </div>
+            </div>
+            <div class="clearfix-nodot"></div>
+        </div>
+    </div>
+    <script src="/bundles/jquery?v=xjmWnUVnh6cGseNCEKLm8yRlFUc3y2M6Jpca8_FPdls1"></script>
+
+
+    <script src="/Content/taxcalJs?v=Nnz9OlioD3Xp6GksIdZk-k6RkiBClEGry14OXs5Qn8Q1"></script>
+
+
+</body>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-51808061-1', 'uobam.co.th');
+    ga('send', 'pageview');
+</script>
+
+</html>
