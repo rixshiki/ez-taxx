@@ -2,7 +2,7 @@
 
 <v-container fluid class="bg1">
     <ul class="pageBar">
-            <router-link to="/index"><li class="goLeft pbLiH navTextG black--text">การคำนวณภาษี</li></router-link>
+            <router-link to="/"><li class="goLeft pbLiH navTextG black--text">การคำนวณภาษี</li></router-link>
             <router-link to="/advDiscountTax"><li class="goLeft pbLiH"><a class="navTextG" href="">วิธีลดหย่อนภาษีเพิ่มเติม</a></li></router-link>
             <router-link to="/contact"><li class="goLeft pbLiH"><a class="navTextG" href="">ติดต่อเรา</a></li></router-link>
         </ul>

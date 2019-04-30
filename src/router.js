@@ -44,6 +44,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ '@/views/calculate5.vue')
     },
     {
+      path: '/calculateEd2',
+      name: 'calculatEd2',
+      component: () => import(/* webpackChunkName: "about" */ '@/views/calculateEd2.vue')
+    },
+    {
       path: '/advDiscountTax',
       name: 'advDiscountTax',
       component: () => import(/* webpackChunkName: "about" */ '@/views/advDiscountTax.vue')

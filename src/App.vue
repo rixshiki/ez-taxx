@@ -1,9 +1,9 @@
 <template>
 <v-app class="blue lighten-5">
     
-  <v-flex>
+  <div> 
     <NavBarUser/>
-  </v-flex>
+  </div>
   <v-content>
     <router-view/>
   </v-content>
@@ -21,7 +21,7 @@ export default {
   },
   data () {
     return {
-      
+     
     }
   }
 
