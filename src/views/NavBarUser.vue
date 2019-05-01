@@ -5,7 +5,11 @@
       
       <v-toolbar app class="indigo darken-4 white--text">
       <v-toolbar-title class="headline text-uppercase">
-        <router-link to="/"><a  class="navTextG" href="">EZ - TAX</a></router-link>
+        <router-link to="/">
+        <a class="navbar-brand" href="">
+      <h3 class="d-inline-block align-top white--text">EX - TAX</h3>
+    </a>
+        </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <left>
@@ -20,7 +24,7 @@
       </v-btn>
       </router-link> -->
       <v-flex class="mt-4 mb-3 ">
-        <popup/>
+        <!--<popup/> -->
       </v-flex>
       </left>
 <!--      <router-link to="/login">
@@ -73,3 +77,20 @@ export default {
   },
 }
 </script>
+<style>
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.d-inline-block {
+    display: inline-block !important;
+}
+.align-top {
+    vertical-align: top !important;
+}
+</style>

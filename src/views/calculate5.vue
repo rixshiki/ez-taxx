@@ -195,7 +195,7 @@
         <v-flex xs12 text-md-center>
                 <div  >
                     <v-btn to="calculate4" round color="primary" dark>ก่อนหน้า</v-btn> 
-                    <v-btn to="/" round color="primary" dark>สำเร็จ</v-btn> 
+                    <v-btn to="/index" round color="primary" dark>สำเร็จ</v-btn> 
                                       
                 </div>
             </v-flex>

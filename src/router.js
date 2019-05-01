@@ -9,9 +9,10 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/index',
       name: 'index',
       component: Index
+     // component: () => import(/* webpackChunkName: "about" */ '@/views/popup.vue')
     },
     {
       path: '/register',
@@ -79,7 +80,12 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ '@/views/login.vue')
     },
     {
-      path: '/popup',
+      path: '/newLogin',
+      name: 'newLogin',
+      component: () => import(/* webpackChunkName: "about" */ '@/views/newLogin.vue')
+    },
+    {
+      path: '/',
       name: 'popup',
       component: () => import(/* webpackChunkName: "about" */ '@/views/popup.vue')
     }

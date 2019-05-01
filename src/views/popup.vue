@@ -1,9 +1,9 @@
 <template>
-  <v-layout row justify-center>
-    <v-dialog v-model="dialog" persistent max-width="600px">
-      <template v-slot:activator="{ on }">
+  <v-layout row align-center justify-center fill-height class="red">
+    
+      <!--<template v-slot:activator="{ on }">
         <v-btn color="transparent" dark v-on="on">เข้าสู่ระบบ</v-btn>
-      </template>
+      </template> -->
       <v-card>
           <br>
           <center>
@@ -38,12 +38,12 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="blue darken-1" flat @click="dialog = false">ออกจากหน้านี้</v-btn>
+          <!--<v-btn color="blue darken-1" flat @click="dialog = false">ออกจากหน้านี้</v-btn> -->
           <v-btn color="blue darken-1" flat @click="dialog = false">เข้าสู่ระบบ</v-btn>
         </v-card-actions>
         
       </v-card>
-    </v-dialog>
+    <!--</v-dialog>-->
   </v-layout>
 </template>
 
@@ -53,7 +53,7 @@
     {
       return {
         show1: false,
-        dialog: false,
+        dialog: true,
         title: 'Preliminary report',
         email: '',
         password: 'Password',
