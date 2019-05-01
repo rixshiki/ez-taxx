@@ -1,6 +1,6 @@
 
 <template>
-<v-container   fill-height>
+    <v-container   fill-height>
     <div class="tax-form" id="form-first">
 
     <v-layout column wrap  justify-center class="white">
@@ -11,8 +11,8 @@
             </v-flex>
             <v-spacer></v-spacer>
             <v-flex xs12 > 
-                <h2 class="text-md-center headline">ค่าใช้จ่ายและค่าลดหย่อน</h2>
-                <hr>
+                <h2 class="text-md-center headline">ค่าใช้จ่ายและค่าลดหย่อนส่วนตัว</h2>
+                <hr><hr>
             </v-flex>
             
             <!-- ---------  -->
@@ -20,14 +20,14 @@
                  <p class="text-lg-right sp font-weight-medium title text-lg-right">ค่าใช้จ่าย:</p> 
             </v-flex>
             <v-flex xs6>
-                    <p class="text-lg-right sp font-weight-medium title text-lg-right">100,000 {{name}}</p> 
+                    <p class="text-lg-right sp font-weight-medium title text-lg-right">100,000</p> 
             </v-flex>
             <v-flex xs2>
                     <p class="text-lg-right sp font-weight-medium title text-lg-right">บาท</p> 
             </v-flex>
              <!-- ---------  -->
                 <v-flex xs4 class> 
-                    <p class="text-lg-right sp font-weight-medium title text-lg-right">ค่าลดหย่อน:</p> 
+                    <p class="text-lg-right sp font-weight-medium title text-lg-right">ค่าลดหย่อนส่วนตัว:</p> 
                 </v-flex>
                 <v-flex xs6>
                     <p class="text-lg-right sp font-weight-medium title text-lg-right">60,000</p> 
@@ -37,40 +37,17 @@
                 </v-flex>
              <!-- ---------  -->
            
-                <!-- ---------  -->
-                <v-flex xs4 class> 
-                    <p class="text-lg-right sp font-weight-medium title text-lg-right">สถานภาพ:</p> 
-                </v-flex>
-                <v-flex xs8>
-<div class="text-xs-left">
-    <v-menu open-on-hover top offset-y>
-      <template v-slot:activator="{ on }">
-        <v-btn
-          color="primary"
-          dark
-          v-on="on"
-        >
-          สถานภาพ
-        </v-btn>
-      </template>
+               
+        
+        </v-layout>
+        <v-layout  row wrap >
+            <v-flex xs12 > 
+                <h2 class="text-md-center headline">คำนวณภาษี</h2>
+                <hr><hr>
+            </v-flex>
 
-      <v-list>
-        <v-list-tile
-          v-for="(item, index) in items"
-          :key="index"
-          @Click="no"
-        >
-          <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-menu>
-  </div>    
-                </v-flex>
-
-
-                <!-- ---------  -->
-                <v-flex xs4 class> 
-                    <p class="text-lg-right sp font-weight-medium title text-lg-right">ค่าลดหย่อนคู่สมรส:</p> 
+            <v-flex xs4 class> 
+                    <p class="text-lg-right sp font-weight-medium title text-lg-right">รวมค่าใช้จ่ายและค่าลดหย่อนส่วนตัว:</p> 
                 </v-flex>
                 <v-flex xs6>
                     <p class="text-lg-right sp font-weight-medium title text-lg-right">0</p> 
@@ -78,41 +55,30 @@
                 <v-flex xs2>
                     <p class="text-lg-right sp font-weight-medium title text-lg-right">บาท</p> 
                 </v-flex>
-             <!-- ---------  -->
+
                 <v-flex xs4 class> 
-                    <p class="text-lg-right sp font-weight-medium title text-lg-right">ค่าลดหย่อนบุตร (ไม่จำกัดจำนวน):</p> 
+                    <p class="text-lg-right sp font-weight-medium title text-lg-right">รวมเงินได้สุทธิ:</p> 
                 </v-flex>
-                <v-flex xs1>
-                    <v-text-field 
-                        label="คน"
-                        value="0"
-                        prefix=" "
-                    ></v-text-field>
-                </v-flex>
-                <v-flex xs5>
-                    <p class="text-lg-right sp font-weight-medium title text-lg-right">0</p> 
+                <v-flex xs6>
+                    <p class="text-lg-right sp font-weight-medium title text-lg-right">0.00</p> 
                 </v-flex>
                 <v-flex xs2>
                     <p class="text-lg-right sp font-weight-medium title text-lg-right">บาท</p> 
                 </v-flex>
-             <!-- ---------  -->
-             <!-- ---------  -->
-     
-        </v-layout>
-        <v-layout  row wrap >
-            <v-flex xs4 class="blue">
+
+            <v-flex xs4 class="green">
                 <div >
-                    <p class="sp font-weight-medium title ">รวมค่าลดหย่อนบุตร:</p>
+                    <p class="sp font-weight-medium title ">ภาษีที่คุณต้องจ่ายปีนี้:</p>
                 </div>
             </v-flex>
-            <v-flex xs6 text-md-right class="blue">
+            <v-flex xs6 text-md-right class="green">
                 <div  >
                     <p class="sp font-weight-medium title" mleft>
-                         0.00
+                         0
                     </p>  
                 </div>
             </v-flex>
-            <v-flex xs2 text-md-left class="blue">
+            <v-flex xs2 text-md-left class="green">
                 <div  >
                     <p class="sp font-weight-medium title" mleft>
                          บาท
@@ -121,7 +87,7 @@
             </v-flex>
             <v-flex xs12 text-md-center >
                 <div  >
-                    
+                    <v-btn to="calculate" round color="primary" dark>ก่อนหน้า</v-btn> 
                     <v-btn to="calculate3" round color="primary" dark>ต่อไป</v-btn> 
                                       
                 </div>
@@ -139,14 +105,10 @@
 
 
 <script>
-import calulate from "./calculate.vue";
-
 export default {
    name: 'calculate2',
    data(){
        return{
-           val: "22",
-           name: "",
             items: [
                     { title: 'โสด' },
                     { title2: 'หย่า' },
@@ -155,9 +117,27 @@ export default {
                     ]
        }
    },
-   components: {
-       calculate
-   }
+   computed: {
+        ...mapState(['User'])
+    },
+    methods: {
+        checkval: function(event){
+            if(this.User.salary == ''){
+                this.User.salary = 0
+            }
+            if(this.User.bonus == ''){
+                this.User.bonus = 0
+            }
+            if(this.User.income == ''){
+                this.User.income = 0
+            }
+
+            this.User.total = parseFloat(this.User.salary)*12+parseFloat(this.User.bonus)+parseFloat(this.User.income)
+        }
+    },
+    mounted(){
+          this.User.total = parseFloat(this.User.salary)*12+parseFloat(this.User.bonus)+parseFloat(this.User.income)
+    }
 }
 </script>
 <style>

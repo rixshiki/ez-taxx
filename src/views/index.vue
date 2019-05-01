@@ -2,23 +2,61 @@
 
 <v-container fluid class="bg1">
     <ul class="pageBar">
-            <router-link to="/"><li class="goLeft pbLiH navTextG black--text">การคำนวณภาษี</li></router-link>
+            <router-link to="/index"><li class="goLeft pbLiH navTextG black--text" @click="handleOk">การคำนวณภาษี</li></router-link>
             <router-link to="/advDiscountTax"><li class="goLeft pbLiH"><a class="navTextG" href="">วิธีลดหย่อนภาษีเพิ่มเติม</a></li></router-link>
             <router-link to="/contact"><li class="goLeft pbLiH"><a class="navTextG" href="">ติดต่อเรา</a></li></router-link>
         </ul>
     <center>
         
-        <div class="textNormal goBottom">
+        <div class="textNormal goBottom white--text">
             <h1>คำนวณภาษีเองง่ายๆ ได้ทุกที่ด้วย EZ-Tax</h1>
         </div>
-        <div class="jumbotron"><router-link to="/calculate">
+        <div class="jumbotron"><router-link to="/calculate" >
         <a href="" class="button">เริ่มคำนวณภาษี</a></router-link></div>
     </center>
+
+    <!--test-->
+    <h1>{{User}}</h1>
+
 </v-container>
+
 </template>
 
 <script>
-  export default {
+import { mapState,mapMutations } from 'vuex'
+import axios from 'axios'
+import { request } from 'http';
+//const request = axios.create({ withCredentials: false });
+
+export default {
+    data () {
+    return {
+            email: "test1@hotmail.com", 
+            password: "testez"
+        }
+    },
+    computed: {
+    ...mapState(['User'])
+    },
+    methods: {
+        ...mapMutations(['SET_USER']),
+        handleOk(evt) {
+          //request
+          axios.post('http://localhost:3000/users/login',{
+                email: this.email, 
+                password: this.password
+            })
+            .then(res => {
+                this.SET_USER(res.data[0])
+            })
+            .catch(err=>{
+            console.log(err)
+      })
+        }
+    },
+    mounted() {
+        
+    }
   }
 </script>
 
@@ -90,7 +128,11 @@
             }
             .bg1 {
                 background-image: url("background.jpg");
-                
+                background-position: center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
             }
             @font-face {
             font-family: spmk;

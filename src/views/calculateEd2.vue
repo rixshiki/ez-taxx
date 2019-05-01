@@ -11,8 +11,8 @@
             </v-flex>
             <v-spacer></v-spacer>
             <v-flex xs12 > 
-                <h2 class="text-md-center headline">ค่าใช้จ่ายและค่าลดหย่อน</h2>
-                <hr>
+                <h2 class="text-md-center headline">ค่าใช้จ่ายและค่าลดหย่อนส่วนตัว</h2>
+                <hr><hr>
             </v-flex>
             
             <!-- ---------  -->
@@ -27,7 +27,7 @@
             </v-flex>
              <!-- ---------  -->
                 <v-flex xs4 class> 
-                    <p class="text-lg-right sp font-weight-medium title text-lg-right">ค่าลดหย่อน:</p> 
+                    <p class="text-lg-right sp font-weight-medium title text-lg-right">ค่าลดหย่อนส่วนตัว:</p> 
                 </v-flex>
                 <v-flex xs6>
                     <p class="text-lg-right sp font-weight-medium title text-lg-right">60,000</p> 
@@ -43,11 +43,11 @@
         <v-layout  row wrap >
             <v-flex xs12 > 
                 <h2 class="text-md-center headline">คำนวณภาษี</h2>
-                <hr>
+                <hr><hr>
             </v-flex>
 
             <v-flex xs4 class> 
-                    <p class="text-lg-right sp font-weight-medium title text-lg-right">รวมค่าใช้จ่ายและค่าลดหย่อน:</p> 
+                    <p class="text-lg-right sp font-weight-medium title text-lg-right">รวมค่าใช้จ่ายและค่าลดหย่อนส่วนตัว:</p> 
                 </v-flex>
                 <v-flex xs6>
                     <p class="text-lg-right sp font-weight-medium title text-lg-right">0.00</p> 
@@ -66,19 +66,19 @@
                     <p class="text-lg-right sp font-weight-medium title text-lg-right">บาท</p> 
                 </v-flex>
 
-            <v-flex xs4 class="blue">
+            <v-flex xs4 class="green">
                 <div >
                     <p class="sp font-weight-medium title ">ภาษีที่คุณต้องจ่ายปีนี้:</p>
                 </div>
             </v-flex>
-            <v-flex xs6 text-md-right class="blue">
+            <v-flex xs6 text-md-right class="green">
                 <div  >
                     <p class="sp font-weight-medium title" mleft>
-                         0.00
+                         0
                     </p>  
                 </div>
             </v-flex>
-            <v-flex xs2 text-md-left class="blue">
+            <v-flex xs2 text-md-left class="green">
                 <div  >
                     <p class="sp font-weight-medium title" mleft>
                          บาท
@@ -87,7 +87,7 @@
             </v-flex>
             <v-flex xs12 text-md-center >
                 <div  >
-                    
+                    <v-btn to="calculate" round color="primary" dark>ก่อนหน้า</v-btn> 
                     <v-btn to="calculate3" round color="primary" dark>ต่อไป</v-btn> 
                                       
                 </div>
@@ -106,14 +106,7 @@
 
 <script>
   export default {
-    data: () => ({
-      items: [
-        { title: 'โสด' },
-        { title: 'หย่า' },
-        { title: 'คู่สมรสมีเงินได้(แยกยื่น)' },
-        { title: 'คู่สมรสไม่มีเงินได้' }
-      ]
-    })
+
   }
 </script>
 <style>

@@ -1,41 +1,147 @@
-<template >
-<v-container align-start justify-center row fill-height  fluid class="bg1">
-<v-layout justify-start column fill-height >
-<div>
-  <div>
-      <v-layout >
+<template>
+<v-container fluid align-start justify-start row fill-height class="">
+  <v-layout column class="">
+    <v-layout justify-center class="">
       <ul class="pageBar">
-            <router-link to="/"><li class="goLeft pbLiH"><a class="navTextG" href="">การคำนวณภาษี</a></li></router-link>
+            <router-link to="/index"><li class="goLeft pbLiH"><a class="navTextG" href="">การคำนวณภาษี</a></li></router-link>
             <router-link to="/advDiscountTax"><li class="goLeft pbLiH navTextG black--text">วิธีลดหย่อนภาษีเพิ่มเติม</li></router-link>
             <router-link to="/contact"><li class="goLeft pbLiH"><a class="navTextG" href="">ติดต่อเรา</a></li></router-link>
       </ul>
-      </v-layout>
-  </div>
-  <div>
-    <v-layout  class="red">
-  <h1>advice Discount Tax</h1>
-  </v-layout>
-  </div>
-</div>
+    </v-layout>-->
 
-</v-layout>
-</v-container>
-<!--
-<v-layout>
-    <ul class="pageBar">
-            <router-link to="/"><li class="goLeft pbLiH navTextG black--text">การคำนวณภาษี</li></router-link>
-            <router-link to="/advDiscountTax"><li class="goLeft pbLiH"><a class="navTextG" href="">วิธีลดหย่อนภาษีเพิ่มเติม</a></li></router-link>
-            <router-link to="/contact"><li class="goLeft pbLiH"><a class="navTextG" href="">ติดต่อเรา</a></li></router-link>
-        </ul>
-    <center>
+    <v-layout fill-height class="white">
+      <div class="tax-form" id="form-first">
+
+    <v-layout column wrap justify-center class="">
+
+        <v-layout  row wrap  justify-center >
+            <v-flex xs12 >
+                <br>
+                <h1 class="text-md-center display-2">EZ - TAX</h1>
+                <br>
+            </v-flex>
+            <v-spacer></v-spacer>
+            
+            <v-flex xs12 > 
+                <h2 class="text-md-left headline indigo--text">การลงทุนใน RMF และ LTF กรณีลงทุนเต็มเพดานที่กฏหมายกำหนดให้</h2>
+                <hr>
+                <br>
+            </v-flex>
+            <!-- ---------  -->
+            <v-flex xs5>
+                 <p class="sp text-lg-right title">จำนวนเงินสูงสุดที่ลงทุน RMF:</p> 
+            </v-flex>
+
+            <v-flex xs6>
+                <p class="sp text-lg-right font-weight-medium">72,000</p>
+            </v-flex>
+
+            <v-flex xs1><p class="sp font-weight-medium title">บาท</p></v-flex>
+             <!-- ---------  -->
+                <v-flex xs5> 
+                 <p class="sp text-lg-right font-weight-medium title">จำนวนเงินสูงสุดที่ลงทุน LTF:</p> 
+            </v-flex>
+
+            <v-flex xs6>
+                <p class="sp text-lg-right font-weight-medium">72,000</p>
+            </v-flex>
+            
+            <v-flex xs1><p class="sp font-weight-medium title">บาท</p></v-flex>
+             <!-- ---------  -->
+             <v-flex xs5> 
+                 <p class="text-lg-right sp font-weight-medium title">ค่าประกันชีวิตสูงสุด:</p> 
+            </v-flex>
+
+            <v-flex xs6>
+                <p class="sp text-lg-right font-weight-medium">100,000</p>
+            </v-flex>
+            
+            <v-flex xs1> <p class="sp font-weight-medium title">บาท</p></v-flex>
+
+            <v-flex xs12><br></v-flex>
+            <!-- ---------  -->
+
+        </v-layout>
+        <v-layout row wrap>
+                        <v-flex xs12 > 
+                <h2 class="text-md-left headline indigo--text">การลงทุนใน RMF และ LTF ประกันชีวิต และประกันชีวิตแบบบำนาญ ตามที่ท่านต้องการ</h2>
+                <hr>
+                <br>
+            </v-flex>
+             <!-- ---------  -->
+            <v-flex xs5>
+                <p class="text-lg-right sp title">จำนวนเงินที่ท่านต้องการลงทุนเพิ่มใน RMF:</p></v-flex>
+            <v-flex xs6>
+                <v-text-field
+                        value="00.00"
+                        prefix=" "
+                    ></v-text-field>
+            </v-flex>
+            <v-flex xs1><p class="sp title">บาท</p></v-flex>
+             <!-- ---------  -->
+            <v-flex xs5>
+                <p class="text-lg-right sp title">จำนวนเงินที่ท่านต้องการลงทุนเพิ่มใน LTF:</p></v-flex>
+            <v-flex xs6>
+                <v-text-field
+                        value="00.00"
+                        prefix=" "
+                    ></v-text-field>
+            </v-flex>
+            <v-flex xs1><p class="sp title">บาท</p></v-flex>
+             <!-- ---------  -->
+            <v-flex xs5>
+                <p class="text-lg-right sp title">ค่าประกันชีวิตแบบบำนาญที่ท่านต้องการลงทุนเพิ่ม:</p></v-flex>
+            <v-flex xs6>
+                <v-text-field
+                        value="00.00"
+                        prefix=" "
+                    ></v-text-field>
+            </v-flex>
+            <v-flex xs1><p class="sp title">บาท</p></v-flex>
+        </v-layout>
+
+        <!-- -----ประหยัดภาษี----- -->
+
+        <v-layout row wrap>
+            <v-flex xs5><p class="sp text-lg-right title">รวมเงินได้สุทธิ:</p></v-flex>
+
+            <v-flex xs6>
+                <p class="sp text-lg-right font-weight-medium blue--text title">320,000</p>
+            </v-flex>
+
+            <v-flex xs1><p class="sp font-weight-medium title">บาท</p></v-flex>
+
+            <v-flex xs12><hr></v-flex>
+             <!-- ---------  -->
+            <v-flex xs5><p class="sp text-lg-right font-weight-medium title">ภาษีที่ต้องเสีย:</p></v-flex>
+            
+            <v-flex xs6>
+                <p class="sp text-lg-right font-weight-medium blue--text title">72,000</p>
+            </v-flex>
+            
+            <v-flex xs1><p class="sp font-weight-medium title">บาท</p></v-flex>
+
+            <v-flex xs12><hr></v-flex>
+             <!-- ---------  -->
+             <v-flex xs5><p class="text-lg-right sp font-weight-medium title">ท่านประหยัดภาษีได้:</p></v-flex>
+
+            <v-flex xs6>
+                <p class="sp text-lg-right font-weight-medium blue--text title">0</p>
+            </v-flex>
+            
+            <v-flex xs1><p class="sp font-weight-medium title">บาท</p></v-flex>
+
+            <v-flex xs12>
+                <hr>
+            </v-flex>
+        </v-layout>
+    </v-layout>
+    </div>
+    </v-layout>
+  </v-layout>
+  
         
-        <div class="textNormal goBottom">
-            <h1>คำนวณภาษีเองง่ายๆ ได้ทุกที่ด้วย EZ-Tax</h1>
-        </div>
-        <div class="jumbotron"><router-link to="/calculate">
-        <a href="" class="button">เริ่มคำนวณภาษี</a></router-link></div>
-    </center>
-</v-layout>-->
+</v-container>
 </template>
 
 <script>
@@ -45,78 +151,18 @@
 </script>
 
 <style>
-            .textNormal{
-                font-family: spmk;
-                color: #707070;
-            }
 
-            .goBottom{
-                margin-top: 350px;
-                margin-bottom: 0%;
-            }
-
-            .jumbotron {
-                font-family: spmk;
-                font-size: 16px;
-                padding: 20px 0px;
-                background-size: cover;
-                text-align: center;
-                color: #fff;
-                position: relative;
-            }
-
-            .button {
-                font-family: spmk;
-                display: inline-block;
-                border: 2px solid #11144C;
-                padding: 10px 20px;
-                color: #11144C;
-                text-decoration: none;
-                transition: 0.3s;
-                line-height: 30px;
-                border-radius: 100px;
-            }
-
-            .button:hover {
-                background: #11144C;
-                color: white;
-            }
-
-            .pageBar {
-                font-family: spmk;
-                font-size: 20px;
-                list-style-type: none;
-                width: 650px;
-                margin: 10px auto;
-                padding: 5px 40px;
-                overflow: auto;
-                background-color: white;
-                line-height: 1.33;
-                border-radius: 100px;
-            }
-            .goLeft {
-                float: left;
-            }
-            .goRight {
-                float: right;
-            }
-            .navTextG {
-                display: block;
-                color: #989898;
-                text-align: center;
-                padding: 14px 40px;
-                text-decoration: none;
-            }
-            .pbLiH a:hover {
-                color: #11144C;
-            }
-            .bg1 {
-                background-image: url("background.jpg");
-                
-            }
-            @font-face {
-            font-family: spmk;
-            src: url('supermarket.ttf') format('truetype');
-           }
+  .pageBar {
+  font-family: spmk;
+  font-size: 20px;
+  list-style-type: none;
+  width: 660px;
+  height: 70px;
+  margin: 10px auto;
+  padding: 5px 40px;
+  overflow: auto;
+  background-color: white;
+  line-height: 1.33;
+  border-radius: 100px;
+}
 </style>
-

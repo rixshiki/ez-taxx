@@ -13,35 +13,21 @@
             <v-spacer></v-spacer>
             <v-flex xs12 > 
                 <h2 class="text-md-center headline">รายได้ที่ต้องเสียภาษีของคุณ</h2>
-                <hr>
+                <hr><hr>
             </v-flex>
             
             <!-- ---------  -->
             <v-flex xs4 class > 
-
-                 
                  <p class="text-lg-right sp font-weight-medium title text-lg-right">เงินเดือน:</p> 
             </v-flex>
             <v-flex xs8>
-                
-               
-                
-                    <input v-model="val"
-                        type="input"
-                        placeholder="edit me"
+                    <v-text-field
+                        v-model="User.salary"
                         label="บาท/เดือน"
                         value= "0.00"
-                        prefix=" "
-                       
-                    >
-                    <!--<div id="animated-number-demo">
-                        <input v-model.number="number" type="number" step="1">
-                        <p>{{ animatedNumber }}</p>
-                    </div>
-
-                    <p class="massage">
-                        {{message}}
-                    </p> -->
+                        postfix="บาท"
+                        v-on:keyup = "checkval"
+                    ></v-text-field>
             </v-flex>
              <!-- ---------  -->
                 <v-flex xs4 >
@@ -50,12 +36,15 @@
                 </v-flex>
                 <v-flex xs8>
                     <v-text-field
+                        v-model="User.bonus"
                         label="บาท"
                         value="00.00"
                         prefix=" "
+                        v-on:keyup = "checkval"
                     ></v-text-field>
                 </v-flex>
              <!-- ---------  -->
+             
             <!-- ---------  -->
                 <v-flex xs4 >
                     
@@ -63,32 +52,29 @@
                 </v-flex>
                 <v-flex xs8>
                     <v-text-field 
+                        v-model="User.income"
                         label="บาท"
                         value="00.00"
                         suffix=" "
+                        v-on:keyup = "checkval"
                     ></v-text-field>
                 </v-flex>
              <!-- ---------  -->
-     
-        </v-layout>
-        <v-layout  row wrap >
-            <v-flex xs4 class="blue">
+        <v-flex xs4 class="green">
                 <div >
-<div v-for="item in items" v-bind:key="item.id">
-  <!-- content -->
-</div>
+
  
                     <p class="sp font-weight-medium title ">รายได้ทั้งหมดต่อปี :</p>
                 </div>
             </v-flex>
-            <v-flex xs6 text-md-right class="blue">
+            <v-flex xs6 text-md-right class="green">
                 <div  >
                     <p class="sp font-weight-medium title">
-                        0.00
+                        {{User.mYear}}
                     </p>  
                 </div>
             </v-flex>
-            <v-flex xs2 text-md-left class="blue">
+            <v-flex xs2 text-md-left class="green">
                 <div  >
                     <p class="sp font-weight-medium title" mleft>
                          บาท
@@ -98,14 +84,16 @@
             <v-flex xs12 text-md-center>
                 <div  >
                     
-                    <v-btn to="calculateEd2" round color="primary" dark>ต่อไป</v-btn> 
+                    <v-btn to="calculate2" round color="primary" dark>ต่อไป</v-btn> 
                                       
                 </div>
             </v-flex>
+        </v-layout>
+        <v-layout  row wrap >
+            
      
         </v-layout>
 
-    
     </v-layout>
     </div>
 </v-container>
@@ -115,19 +103,36 @@
 
 
 <script>
+import { mapState,mapMutations } from 'vuex'
 
 export default {
    name: 'calculate',
    data(){
        return{
-           val: "",
-           name: ""
+           
        }
    },
-   components: {
-    
-   }
-    
+   computed: {
+        ...mapState(['User'])
+    },
+    methods: {
+        checkval: function(event){
+            if(this.User.salary == ''){
+                this.User.salary = 0
+            }
+            if(this.User.bonus == ''){
+                this.User.bonus = 0
+            }
+            if(this.User.income == ''){
+                this.User.income = 0
+            }
+
+            this.User.mYear = parseFloat(this.User.salary)*12+parseFloat(this.User.bonus)+parseFloat(this.User.income)
+        }
+    },
+    mounted(){
+          this.User.mYear = parseFloat(this.User.salary)*12+parseFloat(this.User.bonus)+parseFloat(this.User.income)
+    }
 }
 </script>
 
