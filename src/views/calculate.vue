@@ -13,7 +13,7 @@
             <v-spacer></v-spacer>
             <v-flex xs12 > 
                 <h2 class="text-md-center headline">รายได้ที่ต้องเสียภาษีของคุณ</h2>
-                <hr>
+                <hr><hr>
             </v-flex>
             
             <!-- ---------  -->
@@ -26,22 +26,17 @@
                 
                
                 
-                    <input v-model="val"
-                        type="input"
-                        placeholder="edit me"
-                        label="บาท/เดือน"
-                        value= "0.00"
+                    <v-text-field
+                    v-model="money"
+                        label="บาท"
+                        value="00.00"
                         prefix=" "
-                       
-                    >
-                    <!--<div id="animated-number-demo">
-                        <input v-model.number="number" type="number" step="1">
-                        <p>{{ animatedNumber }}</p>
-                    </div>
+                    ></v-text-field>
+                   <!-- <div id="animated-number-demo">
+                       <v-text-field v-model.number="nn" type="number" step="2"></v-text-field>
+                    </div> -->
 
-                    <p class="massage">
-                        {{message}}
-                    </p> -->
+                    
             </v-flex>
              <!-- ---------  -->
                 <v-flex xs4 >
@@ -50,8 +45,9 @@
                 </v-flex>
                 <v-flex xs8>
                     <v-text-field
+                    v-model="bonus"
                         label="บาท"
-                        value="00.00"
+                        value="money"
                         prefix=" "
                     ></v-text-field>
                 </v-flex>
@@ -69,26 +65,19 @@
                     ></v-text-field>
                 </v-flex>
              <!-- ---------  -->
-     
-        </v-layout>
-        <v-layout  row wrap >
-            <v-flex xs4 class="blue">
-                <div >
-<div v-for="item in items" v-bind:key="item.id">
-  <!-- content -->
-</div>
- 
+                         <v-flex xs4 class="green">
+                
                     <p class="sp font-weight-medium title ">รายได้ทั้งหมดต่อปี :</p>
-                </div>
+                
             </v-flex>
-            <v-flex xs6 text-md-right class="blue">
-                <div  >
+            <v-flex xs6 text-md-right class="green">
+                
                     <p class="sp font-weight-medium title">
-                        0.00
+                        {{ money }}
                     </p>  
-                </div>
+                
             </v-flex>
-            <v-flex xs2 text-md-left class="blue">
+            <v-flex xs2 text-md-left class="green">
                 <div  >
                     <p class="sp font-weight-medium title" mleft>
                          บาท
@@ -104,6 +93,10 @@
             </v-flex>
      
         </v-layout>
+        
+
+     
+        
 
     
     </v-layout>
@@ -121,7 +114,9 @@ export default {
    data(){
        return{
            val: "",
-           name: ""
+           money:0,
+           bonus:0,
+           
        }
    },
    components: {
